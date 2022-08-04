@@ -1,0 +1,138 @@
+/*********Change it to inline block**************/
+
+/*******hide this temporarily navbar 2********/
+
+/******navbar 3**********/
+/*******put as white temporarily return back to purple******/
+
+.third-navbar {
+  background-color: var(--white-color);
+  min-height: 50px;
+  overflow-y: hidden;
+  display: block;
+}
+
+/**************POSITION NAVBAR 2 UNDER NAVBAR 3 USING ABSOLUTE FOR NAVBAR 2 AND RELATIVE FOR NAVBAR 3. POSITION IT 50VH DIRECTLY UNDER NAVBAR 3********************/
+#navbar-3 {
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 50vh;
+  position: relative;
+  background-color: red;
+  padding: 1em 0;
+  margin-bottom: 10px;
+}
+
+#navbar-2 {
+  position: static;
+  top: 50vh;
+  display: block;
+  width: 100%;
+  left: 0;
+}
+
+.third-navbar .dropdown {
+  display: inline-block;
+  position: relative;
+}
+/****Return back to normal size for container on larger screen***/
+.third-navbar .container {
+  width: 100%;
+}
+/****end return*******/
+
+.third-navbar li {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+.third-navbar .dropbtn-accordion,
+.third-navbar li a {
+  color: var(--purple-color-primary);
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 1rem;
+}
+
+.third-navbar .dropbtn-accordion {
+  color: var(--purple-color-primary);
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 1rem;
+}
+.dropbtn-accordion:after {
+  content: "\002B";
+  font-weight: 400;
+  float: right;
+  margin-left: 5px;
+  color: var(--dark-purple-color-secondary);
+}
+.active:after {
+  content: "\2012";
+}
+
+.third-navbar .header-dropdown-content {
+  max-height: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.third-navbar form {
+  width: 100%;
+  margin-top: 10px;
+}
+.third-navbar form .input-wrapper {
+  width: 100%;
+  max-width: 400px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 0;
+}
+
+.third-navbar form input[type="text"] {
+  width: 75%;
+  padding: 0.5em;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.third-navbar form button {
+  width: 15%;
+  padding: 0.5em;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: var(--purple-color-primary);
+  color: var(--white-color);
+}
+
+/********HEADER********/
+
+/*********HERO PHOTO***********/
+.hero-image-container {
+  position: relative;
+}
+.hero-image-container img {
+  margin-top: 2.5em;
+}
+.hero-text-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.6em 0.5em;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.hero-text-container h3 {
+  margin-bottom: 0.1em;
+}
