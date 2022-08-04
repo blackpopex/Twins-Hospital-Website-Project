@@ -2548,7 +2548,6 @@ footer .address-privacy-sitemap ul li:last-child a .text-purple {
   display: inline-block;
   max-width: auto;
   font-size: 0.7em;
-
 }
 .you-are-here h5,
 .you-are-here ul {
@@ -3556,11 +3555,9 @@ table td:last-child {
 /************HEADER BACGROUND IMAGE**********/
 
 .section-image-container {
-  background-color: pink;
   line-height: 0;
   padding: -50px 0;
   margin: 0;
-
 }
 
 .header-bg-image {
@@ -3574,93 +3571,89 @@ table td:last-child {
   line-height: 0;
 }
 
-  @media (min-width: 600px) {
-    .header-bg-image {
-  background-size: cover;
-  margin-top: 4em;
-}
+@media (min-width: 600px) {
+  .header-bg-image {
+    background-size: cover;
+    margin-top: 4em;
   }
-
+}
 
 @media (min-width: 768px) {
   .header-bg-image {
-  margin-top: -0.5em;
-   min-height: 200px;
- }
+    margin-top: -0.5em;
+    min-height: 200px;
+  }
 }
-
 
 /**********BACKGROUND-IMAGE FOR SMALL SCREENS TO 768PX SIZED SCREEN********/
 
-  .request-appointment-img {
-    background-image: url("../img/header-bg-image/mobile/");
-  }
+.request-appointment-img {
+  background-image: url("../img/header-bg-image/mobile/request.jpg");
+}
 
-  .accepted-insurance-bg-image {
-    background-image: url("../img/header-bg-image/mobile/");
-  }
-  .award-and-accreditation-bg-image {
-    background-image: url("../img/header-bg-image/.jpg");
-  }
-  .about-us-bg-image {
-    background-image: url("../img/header-bg-image/.jpg");
-  }
-  .meet-the-team-bg-image {
-    background-image: url("../img/header-bg-image/.jpg");
-  }
-  .mission-vision-value-bg-image {
-    background-image: url("../img/header-bg-image/.jpg");
-  }
-  .patient-stories-bg-image {
-    background-image: url("../img/header-bg-image/.jpg");
-  }
-  .phone-directory-bg-image {
-    background-image: url("../img/header-bg-image/.jpg");
-  }
-  .billing-and-financial-bg-image {
-    background-image: url("../img/header-bg-image/.jpg");
-  }
-  .find-a-doctor-bg-image {
-    background-image: url("../img/header-bg-image/.jpg");
-  }
-  .medical-record-bg-image {
-    background-image: url("../img/header-bg-image/.jpg");
-  }
-  .patient-right-bg-image {
-    background-image: url("../img/header-bg-image/.jpg");
-  }
-  .pay-your-bill-bg-image {
-    background-image: url("../img/header-bg-image/.jpg");
-  }
-  .visting-hours-bg-image {
-    background-image: url("../img/header-bg-image/.jpg");
-  }
-  .visitors-bg-image {
-    background-image: url("../img/header-bg-image/.jpg");
-  }
-
-
- .what-to-expect-bg-image {
-    background-image: url("../img/header-bg-image/mobile/expect.jpg");
-  }
-
-
-
-  .visits-or-stay-bg-image {
-    background-image: url("../img/header-bg-image/.jpg");
-  }
-  .map-and-direction-bg-image {
-    background-image: url("../img/header-bg-image/.jpg");
-  }
-  .refer-a-patient-bg-image {
-    background-image: url("../img/header-bg-image/.jpg");
-  }
-  .services-bg-image {
-    background-image: url("../img/header-bg-image/.jpg");
-  }
-
-
-
+.accepted-insurance-bg-image {
+  background-image: url("../img/header-bg-image/mobile/accept.jpg");
+}
+.award-and-accreditation-bg-image {
+  background-image: url("../img/header-bg-image/mobile/award.jpg");
+}
+.about-us-bg-image {
+  background-image: url("../img/header-bg-image/mobile/about.jpg");
+}
+.meet-the-team-bg-image {
+  background-image: url("../img/header-bg-image/mobile/meet.jpg");
+}
+.mission-vision-value-bg-image {
+  background-image: url("../img/header-bg-image/mobile/mission.jpg");
+}
+.patient-stories-bg-image {
+  background-image: url("../img/header-bg-image/mobile/patient.jpg");
+}
+.phone-directory-bg-image {
+  background-image: url("../img/header-bg-image/mobile/phone.jpg");
+}
+.billing-and-financial-bg-image {
+  background-image: url("../img/header-bg-image/mobile/billing.jpg");
+}
+.find-a-doctor-bg-image {
+  background-image: url("../img/header-bg-image/mobile/find.jpg");
+}
+.medical-record-bg-image {
+  background-image: url("../img/header-bg-image/mobile/medical.jpg");
+}
+.patient-right-bg-image {
+  background-image: url("../img/header-bg-image/mobile/patient.jpg");
+}
+.pay-your-bill-bg-image {
+  background-image: url("../img/header-bg-image/mobile/pay.jpg");
+}
+.visting-hours-bg-image {
+  background-image: url("../img/header-bg-image/mobile/visiting.jpg");
+}
+.visitors-bg-image {
+  background-image: url("../img/header-bg-image/mobile/visitors.jpg");
+}
+.what-to-expect-bg-image {
+  background-image: url("../img/header-bg-image/mobile/expect.jpg");
+}
+.visits-or-stay-bg-image {
+  background-image: url("../img/header-bg-image/mobile/stay.jpg");
+}
+.map-and-direction-bg-image {
+  background-image: url("../img/header-bg-image/mobile/map.jpg");
+}
+.refer-a-patient-bg-image {
+  background-image: url("../img/header-bg-image/mobile/refer.jpg");
+}
+.services-bg-image {
+  background-image: url("../img/header-bg-image/mobile/services.jpg");
+}
+.services-bg-image {
+  background-image: url("../img/header-bg-image/mobile/services.jpg");
+}
+.contact-us-bg-image {
+  background-image: url("../img/header-bg-image/mobile/contact.jpg");
+}
 
 /*************RESPONSIVENESS FOR 992PX TO 1200PX ***************/
 
@@ -3735,15 +3728,19 @@ table td:last-child {
   .services-bg-image {
     background-image: url("../img/header-bg-image/1200px/services.jpg");
   }
+  .contact-us-bg-image {
+    background-image: url("../img/header-bg-image/1200px/contact.jpg");
+  }
 }
 
 @media (min-width: 1200px) {
   .header-bg-image {
     background-size: cover;
-     margin-top: -0.5em;
+    margin-top: -0.5em;
   }
+}
 
-  /*************RESPONSIVENESS FOR 1400PX TO LARGER SCREEN SIZES ***************/
+/*************RESPONSIVENESS FOR 1400PX TO LARGER SCREEN SIZES ***************/
 
 @media (min-width: 1400px) {
   .request-appointment-img {
