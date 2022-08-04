@@ -19,7 +19,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body ng-app="myApplication" ng-controller="ctrlControl">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 
     <!-----------------------------------------------HEADER BEGINS------------------------------------------------------------------>
@@ -570,9 +570,9 @@
       </div>
     </section>
 
-    <!--pay-a-Bill, Accepted-Insurance, and Visitors Information-->
+    <!--pay-a-Bill, Accepted-Insurance, and Visitors Information, angular.js applied for changing between tabs-->
     <section id="payAceptVist">
-      <div class="container" ng-app="myApplication" ng-controller="ctrlControl">
+      <div class="container">
         <!--Navigation Links-->
         <ul class="inline-block">
           <li><a href="#/" ng-click="payABill()">Pay a Bill</a></li>
@@ -586,7 +586,7 @@
           </li>
         </ul>
 
-        <!--Links Content1-->
+        <!--Links Content1, visible by default-->
         <div class="link-content" ng-show="visit">
           <div class="container-mini-width align-left">
             <div class="flex align-start">
@@ -616,19 +616,19 @@
           </div>
         </div>
 
-        <!--Links Content2-->
+        <!--Links Content2 visble when accepted insurance tab is clicked-->
         <div class="link-content" ng-show="accept">
           <div class="container-mini-width align-left">
             <div class="flex align-start">
               <div class="col-50">
                 <div>
-                  <h2 class="text-black">deleniti a Loved One ?</h2>
+                  <h2 class="text-black">Insurance Types</h2>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Mollitia dolorum deleniti quod repellat doloribus Lorem
                     ipsum dolor sit amet consectetur adipisicing elit. Mollitia
                     dolorum deleniti quod repellat doloribus necessitatibus,
-                    ducimus odit labore alias, nihil quos magnam a tempora.
+                    ducimus odit labore alias.
                   </p>
                   <a href="#" class="btn btn-bg-purple">
                     Learn More
@@ -638,8 +638,8 @@
               </div>
               <div class="col-50">
                 <img
-                  src="img/other photos/VisitorPolicy.jpg"
-                  alt="hospital visitors"
+                  src="img/other photos/insurance2.jpg"
+                  alt="Insurance photo"
                 />
               </div>
             </div>
@@ -652,13 +652,12 @@
             <div class="flex align-start">
               <div class="col-50">
                 <div>
-                  <h2 class="text-black">Hello a Loved One ?</h2>
+                  <h2 class="text-black">Online Pay Accepted</h2>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Mollitia dolorum deleniti quod repellat doloribus Lorem
                     ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-                    dolorum deleniti quod repellat doloribus necessitatibus,
-                    ducimus odit labore alias, nihil quos magnam a tempora.
+                    dolorum deleniti.
                   </p>
                   <a href="#" class="btn btn-bg-purple">
                     Learn More
@@ -667,45 +666,13 @@
                 </div>
               </div>
               <div class="col-50">
-                <img
-                  src="img/other photos/VisitorPolicy.jpg"
-                  alt="hospital visitors"
-                />
+                <img src="img/other photos/paybill.jpg" alt="pay a bill" />
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <script>
-      //Angular.js application
-      var app = angular.module("myApplication", []);
-      app.controller("ctrlControl", function ($scope) {
-        $scope.visit = true;
-        $scope.accept = false;
-        $scope.pay = false;
-
-        $scope.visitorsInformation = function () {
-          $scope.visit = true;
-          $scope.accept = false;
-          $scope.pay = false;
-        };
-
-        $scope.acceptedInsurance = function () {
-          $scope.visit = false;
-          $scope.accept = true;
-          $scope.pay = false;
-        };
-
-        $scope.payABill = function () {
-          $scope.visit = false;
-          $scope.accept = false;
-          $scope.pay = true;
-        };
-      });
-    </script>
-
     <!--Patient's Testimonies-->
     <section id="patientTestimonies">
       <div class="container">
@@ -727,7 +694,11 @@
               <!------------Testifiers------------>
               <div class="icons-wrapper">
                 <!--first justin-->
-                <div class="testifier-img-flex" id="mainBody">
+                <div
+                  class="testifier-img-flex"
+                  id="mainBody"
+                  ng-click="testfier_justin()"
+                >
                   <div class="outermost-white-circle-wrapper">
                     <div
                       class="outer-wrapper purple-border"
@@ -742,8 +713,13 @@
                   </div>
                   <h4 id="imageText" class="imageText">Justin Lorem</h4>
                 </div>
+
                 <!--second kathy-->
-                <div class="testifier-img-flex" id="mainBody">
+                <div
+                  class="testifier-img-flex"
+                  id="mainBody"
+                  ng-click="testfier_kathy()"
+                >
                   <div class="outermost-white-circle-wrapper">
                     <div
                       class="outer-wrapper header-border-color"
@@ -758,8 +734,13 @@
                   </div>
                   <h4 id="imageText" class="imageText">Kathy Lorem</h4>
                 </div>
+
                 <!--third Morris-->
-                <div class="testifier-img-flex" id="mainBody">
+                <div
+                  class="testifier-img-flex"
+                  id="mainBody"
+                  ng-click="testfier_morris()"
+                >
                   <div class="outermost-white-circle-wrapper">
                     <div class="outer-wrapper navy-border" id="addActiveGlass">
                       <img
@@ -771,13 +752,18 @@
                   </div>
                   <h4 id="imageText" class="imageText">Morris Lorem</h4>
                 </div>
-                <!--fourth Chloe-->
-                <div class="testifier-img-flex testfier-active" id="mainBody">
+
+                <!--fourth sandra-->
+                <div
+                  class="testifier-img-flex testfier-active"
+                  id="mainBody"
+                  ng-click="testfier_sandra()"
+                >
                   <div class="outermost-white-circle-wrapper">
                     <div class="outer-wrapper pitch-border" id="addActiveGlass">
                       <img
                         src="./img/testifiers/pexels-christina-morillo-1181519.jpg"
-                        alt="Chloe"
+                        alt="sandra"
                         id="image4"
                       />
                     </div>
@@ -796,18 +782,19 @@
 
           <div class="testifiers-comments col-50">
             <div class="comments-wrapper">
-              <!---------------Justin Comment------------------------>
-              <div id="justinComment">
+              <!---------------Sandra's Comment------------------------>
+              <div id="justinComment" ng-show="sandra_comment">
                 <h3>
                   <span
                     class="iconify"
                     data-icon="icomoon-free:quotes-left"
                   ></span>
                   <span class="comment-block">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Necessitatibus sint ad alias, pariatur suscipit sed minus
-                    consequatur quisquam provident! Sit, fuga cupiditate rem a
-                    assumenda earum! Facere iusto vel expedita.
+                    I recently found myself under your care for a cardiac issue.
+                    While there, accompanied by my husband, we found that the
+                    entire staff at Twins Hospital was exceedingly professional
+                    and efficient, from your E.R. receptionists to the cardiac
+                    care team.
                   </span>
                   <span
                     class="iconify"
@@ -816,7 +803,127 @@
                 </h3>
               </div>
 
-              <!---------------kathy Comment------------------------>
+              <!---------------Morris's Comment------------------------>
+              <div id="justinComment" ng-show="morris_comment">
+                <h3>
+                  <span
+                    class="iconify"
+                    data-icon="icomoon-free:quotes-left"
+                  ></span>
+                  <span class="comment-block">
+                    I am writing on behalf of my brother who was a patient in
+                    your hospital. I would like to thank you on behalf of my
+                    entire family for the help and consideration shown to me in
+                    what was a very difficult time. Again, I would like to thank
+                    you for the services you provide to patients and their
+                    families.
+                  </span>
+                  <span
+                    class="iconify"
+                    data-icon="icomoon-free:quotes-right"
+                  ></span>
+                </h3>
+              </div>
+              <!---------------Kathy's Comment------------------------>
+              <div id="justinComment" ng-show="kathy_comment">
+                <h3>
+                  <span
+                    class="iconify"
+                    data-icon="icomoon-free:quotes-left"
+                  ></span>
+                  <span class="comment-block">
+                    We would like to let you know how much we appreciate the
+                    special care our daughter was given by the doctors and staff
+                    at your hospital. Our baby’s physician was professional,
+                    kind, understanding, and her treatment was “right on.” Your
+                    organization should be proud to have such kind hearted
+                    people. They made sure that my daughter’s hospitalization
+                    was very pleasant.
+                  </span>
+                  <span
+                    class="iconify"
+                    data-icon="icomoon-free:quotes-right"
+                  ></span>
+                </h3>
+              </div>
+              <!---------------Justin's Comment------------------------>
+              <div id="justinComment" ng-show="justin_comment">
+                <h3>
+                  <span
+                    class="iconify"
+                    data-icon="icomoon-free:quotes-left"
+                  ></span>
+                  <span class="comment-block">
+                    I recently had a nine day stay at Jamaica Hospital and I
+                    wanted to express how impressed I was with the level of care
+                    I received from everyone I encountered. The Trauma Center
+                    saved my life! I found it amazing and I am grateful that it
+                    services my community.
+                  </span>
+                  <span
+                    class="iconify"
+                    data-icon="icomoon-free:quotes-right"
+                  ></span>
+                </h3>
+              </div>
+
+              <script>
+                //Angular.js application for controlling both pay your bill to visitors information tab and testifiers section
+                var app = angular.module("myApplication", []);
+                app.controller("ctrlControl", function ($scope) {
+                  $scope.visit = true;
+                  $scope.accept = false;
+                  $scope.pay = false;
+
+                  $scope.visitorsInformation = function () {
+                    $scope.visit = true;
+                    $scope.accept = false;
+                    $scope.pay = false;
+                  };
+
+                  $scope.acceptedInsurance = function () {
+                    $scope.visit = false;
+                    $scope.accept = true;
+                    $scope.pay = false;
+                  };
+
+                  $scope.payABill = function () {
+                    $scope.visit = false;
+                    $scope.accept = false;
+                    $scope.pay = true;
+                  };
+
+                  //control for testifiers section
+                  $scope.sandra_comment = true;
+                  $scope.morris_comment = false;
+                  $scope.kathy_comment = false;
+                  $scope.justin_comment = false;
+                  $scope.testfier_sandra = function () {
+                    $scope.sandra_comment = true;
+                    $scope.morris_comment = false;
+                    $scope.kathy_comment = false;
+                    $scope.justin_comment = false;
+                  };
+                  $scope.testfier_morris = function () {
+                    $scope.sandra_comment = false;
+                    $scope.morris_comment = true;
+                    $scope.kathy_comment = false;
+                    $scope.justin_comment = false;
+                  };
+                  $scope.testfier_kathy = function () {
+                    $scope.sandra_comment = false;
+                    $scope.morris_comment = false;
+                    $scope.kathy_comment = true;
+                    $scope.justin_comment = false;
+                  };
+                  $scope.testfier_justin = function () {
+                    $scope.sandra_comment = false;
+                    $scope.morris_comment = false;
+                    $scope.kathy_comment = false;
+                    $scope.justin_comment = true;
+                  };
+                });
+              </script>
             </div>
           </div>
         </div>
