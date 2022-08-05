@@ -1,3 +1,4 @@
+//Vanila Javascript
 var accordion, i;
 
 accordion = document.getElementsByClassName("dropbtn-accordion");
@@ -82,9 +83,28 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-//add click event to each of the testifers
+//JQUERY
 
-//jquery
+//toggle the active class when tab links pay a bill, accepted insurance and visitors information is clicked.
+$(document).ready(function () {
+  $("#payBill").click(function () {
+    $("#payBill").addClass("tab_activated");
+    $("#acceptedInsurance").removeClass("tab_activated");
+    $("#visitorInfo").removeClass("tab_activated");
+  });
+  $("#acceptedInsurance").click(function () {
+    $("#payBill").removeClass("tab_activated");
+    $("#acceptedInsurance").addClass("tab_activated");
+    $("#visitorInfo").removeClass("tab_activated");
+  });
+  $("#visitorInfo").click(function () {
+    $("#payBill").removeClass("tab_activated");
+    $("#acceptedInsurance").removeClass("tab_activated");
+    $("#visitorInfo").addClass("tab_activated");
+  });
+});
+
+//toggle the active class when a testifier tab links is clicked, also add the patient's name.
 $(document).ready(function () {
   $("#justin_p").click(function () {
     $("#person_one").addClass("showing");
@@ -129,4 +149,62 @@ $(document).ready(function () {
     $("#kathy_p #imageText").removeClass("display-text");
     $("#morris_p #imageText").removeClass("display-text");
   });
+});
+
+//Angular.Js
+
+//Angular.js application for controlling both pay your bill to visitors information tab and testifiers section
+var app = angular.module("myApplication", []);
+app.controller("ctrlControl", function ($scope) {
+  $scope.visit = true;
+  $scope.accept = false;
+  $scope.pay = false;
+
+  $scope.visitorsInformation = function () {
+    $scope.visit = true;
+    $scope.accept = false;
+    $scope.pay = false;
+  };
+
+  $scope.acceptedInsurance = function () {
+    $scope.visit = false;
+    $scope.accept = true;
+    $scope.pay = false;
+  };
+
+  $scope.payABill = function () {
+    $scope.visit = false;
+    $scope.accept = false;
+    $scope.pay = true;
+  };
+
+  //control for testifiers section
+  $scope.sandra_comment = true;
+  $scope.morris_comment = false;
+  $scope.kathy_comment = false;
+  $scope.justin_comment = false;
+  $scope.testfier_sandra = function () {
+    $scope.sandra_comment = true;
+    $scope.morris_comment = false;
+    $scope.kathy_comment = false;
+    $scope.justin_comment = false;
+  };
+  $scope.testfier_morris = function () {
+    $scope.sandra_comment = false;
+    $scope.morris_comment = true;
+    $scope.kathy_comment = false;
+    $scope.justin_comment = false;
+  };
+  $scope.testfier_kathy = function () {
+    $scope.sandra_comment = false;
+    $scope.morris_comment = false;
+    $scope.kathy_comment = true;
+    $scope.justin_comment = false;
+  };
+  $scope.testfier_justin = function () {
+    $scope.sandra_comment = false;
+    $scope.morris_comment = false;
+    $scope.kathy_comment = false;
+    $scope.justin_comment = true;
+  };
 });

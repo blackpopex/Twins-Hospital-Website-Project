@@ -2017,10 +2017,10 @@ footer .address-privacy-sitemap ul li:last-child a .text-purple {
   padding-inline: 0;
   transition: all 0.5s ease-in-out;
 }
+
 #payAceptVist ul li a:hover {
   color: var(--purple-color-primary);
 }
-
 #payAceptVist ul li a::after {
   content: "";
   width: 0;
@@ -2030,6 +2030,12 @@ footer .address-privacy-sitemap ul li:last-child a .text-purple {
   left: 0;
   bottom: 0;
   transition: width 0.5s ease-in-out;
+}
+#payAceptVist ul li a.tab_activated {
+  color: var(--purple-color-primary);
+}
+#payAceptVist ul li a.tab_activated::after {
+  width: 100%;
 }
 #payAceptVist ul li a:hover::after {
   width: 100%;

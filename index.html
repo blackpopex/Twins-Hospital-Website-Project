@@ -575,12 +575,20 @@
       <div class="container">
         <!--Navigation Links-->
         <ul class="inline-block">
-          <li><a href="#/" ng-click="payABill()">Pay a Bill</a></li>
           <li>
-            <a href="#/" ng-click="acceptedInsurance()">Accepted Insurance</a>
+            <a href="#/" ng-click="payABill()" id="payBill">Pay a Bill</a>
           </li>
           <li>
-            <a href="#/" ng-click="visitorsInformation()" class="link-visited"
+            <a href="#/" ng-click="acceptedInsurance()" id="acceptedInsurance"
+              >Accepted Insurance</a
+            >
+          </li>
+          <li>
+            <a
+              href="#/"
+              ng-click="visitorsInformation()"
+              class="tab_activated"
+              id="visitorInfo"
               >Visitors Information</a
             >
           </li>
@@ -868,64 +876,6 @@
                   ></span>
                 </h3>
               </div>
-
-              <script>
-                //Angular.js application for controlling both pay your bill to visitors information tab and testifiers section
-                var app = angular.module("myApplication", []);
-                app.controller("ctrlControl", function ($scope) {
-                  $scope.visit = true;
-                  $scope.accept = false;
-                  $scope.pay = false;
-
-                  $scope.visitorsInformation = function () {
-                    $scope.visit = true;
-                    $scope.accept = false;
-                    $scope.pay = false;
-                  };
-
-                  $scope.acceptedInsurance = function () {
-                    $scope.visit = false;
-                    $scope.accept = true;
-                    $scope.pay = false;
-                  };
-
-                  $scope.payABill = function () {
-                    $scope.visit = false;
-                    $scope.accept = false;
-                    $scope.pay = true;
-                  };
-
-                  //control for testifiers section
-                  $scope.sandra_comment = true;
-                  $scope.morris_comment = false;
-                  $scope.kathy_comment = false;
-                  $scope.justin_comment = false;
-                  $scope.testfier_sandra = function () {
-                    $scope.sandra_comment = true;
-                    $scope.morris_comment = false;
-                    $scope.kathy_comment = false;
-                    $scope.justin_comment = false;
-                  };
-                  $scope.testfier_morris = function () {
-                    $scope.sandra_comment = false;
-                    $scope.morris_comment = true;
-                    $scope.kathy_comment = false;
-                    $scope.justin_comment = false;
-                  };
-                  $scope.testfier_kathy = function () {
-                    $scope.sandra_comment = false;
-                    $scope.morris_comment = false;
-                    $scope.kathy_comment = true;
-                    $scope.justin_comment = false;
-                  };
-                  $scope.testfier_justin = function () {
-                    $scope.sandra_comment = false;
-                    $scope.morris_comment = false;
-                    $scope.kathy_comment = false;
-                    $scope.justin_comment = true;
-                  };
-                });
-              </script>
             </div>
           </div>
         </div>
