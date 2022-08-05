@@ -19,7 +19,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body ng-app="myApplication" ng-controller="ctrlControl">
     <!-----------------------------------------------HEADER BEGINS------------------------------------------------------------------>
     <!--header-hero section-->
     <div class="header-hero-container">
@@ -480,168 +480,183 @@
                 <div id="stick_navbar" class="stickybar">
                   <ul class="list">
                     <li>
-                      <a href="#" class="purple-text activated-list">All</a>
-                    </li>
-                    <li><a href="#" class="purple-text">A</a></li>
-                    <li>
-                      <a href="#" class="grey-text" aria-disabled="true">B</a>
-                    </li>
-                    <li><a href="#" class="purple-text">C</a></li>
-                    <li>
-                      <a href="#" class="grey-text" aria-disabled="true">D</a>
-                    </li>
-                    <li><a href="#" class="purple-text">E</a></li>
-                    <li>
-                      <a href="#" class="grey-text" aria-disabled="true">F</a>
-                    </li>
-                    <li><a href="#" class="purple-text">G</a></li>
-                    <li>
-                      <a href="#" class="grey-text" aria-disabled="true">H</a>
-                    </li>
-                    <li><a href="#" class="purple-text">I</a></li>
-                    <li><a href="#" class="purple-text">J</a></li>
-                    <li><a href="#" class="purple-text">K</a></li>
-                    <li>
-                      <a href="#" class="grey-text" aria-disabled="true">K</a>
-                    </li>
-                    <li><a href="#" class="purple-text">L</a></li>
-                    <li><a href="#" class="purple-text">M</a></li>
-                    <li>
-                      <a href="#" class="grey-text" aria-disabled="true">N</a>
-                    </li>
-                    <li><a href="#" class="purple-text">O</a></li>
-                    <li><a href="#" class="purple-text">P</a></li>
-                    <li>
-                      <a href="#" class="grey-text" aria-disabled="true">Q</a>
-                    </li>
-                    <li><a href="#" class="purple-text">R</a></li>
-                    <li><a href="#" class="purple-text">S</a></li>
-                    <li>
-                      <a href="#" class="grey-text" aria-disabled="true">T</a>
+                      <a
+                        href="#"
+                        class="purple-text activated-list"
+                        ng-click="showAll()"
+                        >All</a
+                      >
                     </li>
                     <li>
-                      <a href="#" class="grey-text" aria-disabled="true">U</a>
-                    </li>
-                    <li><a href="#" class="purple-text">V</a></li>
-                    <li>
-                      <a href="#" class="grey-text" aria-disabled="true">W</a>
+                      <a href="#/" class="purple-text" ng-click="showA()">A</a>
                     </li>
                     <li>
-                      <a href="#" class="grey-text" aria-disabled="true">X</a>
+                      <a
+                        href="#/"
+                        class="purple-text"
+                        aria-disabled="true"
+                        ng-click="showB()"
+                        >B</a
+                      >
                     </li>
                     <li>
-                      <a href="#" class="grey-text" aria-disabled="true">Y</a>
+                      <a href="#/" class="purple-text" ng-click="showC()">C</a>
                     </li>
                     <li>
-                      <a href="#" class="grey-text" aria-disabled="true">Z</a>
+                      <a href="#/" class="grey-text" aria-disabled="true">D</a>
+                    </li>
+                    <li><a href="#/" class="purple-text">E</a></li>
+                    <li>
+                      <a href="#/" class="grey-text" aria-disabled="true">F</a>
+                    </li>
+                    <li><a href="#/" class="purple-text">G</a></li>
+                    <li>
+                      <a href="#/" class="grey-text" aria-disabled="true">H</a>
+                    </li>
+                    <li><a href="#/" class="purple-text">I</a></li>
+                    <li><a href="#/" class="purple-text">J</a></li>
+                    <li><a href="#/" class="purple-text">K</a></li>
+                    <li>
+                      <a href="#/" class="grey-text" aria-disabled="true">K</a>
+                    </li>
+                    <li><a href="#/" class="purple-text">L</a></li>
+                    <li><a href="#/" class="purple-text">M</a></li>
+                    <li>
+                      <a href="#/" class="grey-text" aria-disabled="true">N</a>
+                    </li>
+                    <li><a href="#/" class="purple-text">O</a></li>
+                    <li><a href="#/" class="purple-text">P</a></li>
+                    <li>
+                      <a href="#/" class="grey-text" aria-disabled="true">Q</a>
+                    </li>
+                    <li><a href="#/" class="purple-text">R</a></li>
+                    <li><a href="#/" class="purple-text">S</a></li>
+                    <li>
+                      <a href="#/" class="grey-text" aria-disabled="true">T</a>
+                    </li>
+                    <li>
+                      <a href="#/" class="grey-text" aria-disabled="true">U</a>
+                    </li>
+                    <li><a href="#/" class="purple-text">V</a></li>
+                    <li>
+                      <a href="#/" class="grey-text" aria-disabled="true">W</a>
+                    </li>
+                    <li>
+                      <a href="#/" class="grey-text" aria-disabled="true">X</a>
+                    </li>
+                    <li>
+                      <a href="#/" class="grey-text" aria-disabled="true">Y</a>
+                    </li>
+                    <li>
+                      <a href="#/" class="grey-text" aria-disabled="true">Z</a>
                     </li>
                   </ul>
                 </div>
 
                 <div class="services-wrapper">
                   <!--A-->
-                  <div id="alphabet_A" class="A flex-column">
+                  <div id="alphabet_A" class="A flex-column" ng-show="A">
                     <h1 class="purple-text">a</h1>
                     <ul class="flex">
-                      <li><a href="#">A & E</a></li>
-                      <li><a href="#">Adnexal </a></li>
-                      <li><a href="#">Acute Pain</a></li>
-                      <li><a href="#">Anaesthesia</a></li>
-                      <li><a href="#">Audiology</a></li>
-                      <li><a href="#">Acute Pain</a></li>
-                      <li><a href="#">Anaesthesia</a></li>
-                      <li><a href="#">Audiology</a></li>
-                      <li><a href="#">Acute Pain</a></li>
-                      <li><a href="#">Anaesthesia</a></li>
-                      <li><a href="#">Audiology</a></li>
-                      <li><a href="#">Audiology</a></li>
-                      <li><a href="#">Acute Pain</a></li>
-                      <li><a href="#">Anaesthesia</a></li>
-                      <li><a href="#">Audiology</a></li>
-                      <li><a href="#">Acute Pain</a></li>
-                      <li><a href="#">Anaesthesia</a></li>
-                      <li><a href="#">Audiology</a></li>
-                      <li><a href="#">Anaesthesia</a></li>
-                      <li><a href="#">Audiology</a></li>
-                      <li><a href="#">Acute Pain</a></li>
-                      <li><a href="#">Anaesthesia</a></li>
-                      <li><a href="#">Audiology</a></li>
-                      <li><a href="#">Audiology</a></li>
-                      <li><a href="#">Audiology</a></li>
+                      <li><a href="#/">A & E</a></li>
+                      <li><a href="#/">Adnexal </a></li>
+                      <li><a href="#/">Acute Pain</a></li>
+                      <li><a href="#/">Anaesthesia</a></li>
+                      <li><a href="#/">Audiology</a></li>
+                      <li><a href="#/">Acute Pain</a></li>
+                      <li><a href="#/">Anaesthesia</a></li>
+                      <li><a href="#/">Audiology</a></li>
+                      <li><a href="#/">Acute Pain</a></li>
+                      <li><a href="#/">Anaesthesia</a></li>
+                      <li><a href="#/">Audiology</a></li>
+                      <li><a href="#/">Audiology</a></li>
+                      <li><a href="#/">Acute Pain</a></li>
+                      <li><a href="#/">Anaesthesia</a></li>
+                      <li><a href="#/">Audiology</a></li>
+                      <li><a href="#/">Acute Pain</a></li>
+                      <li><a href="#/">Anaesthesia</a></li>
+                      <li><a href="#/">Audiology</a></li>
+                      <li><a href="#/">Anaesthesia</a></li>
+                      <li><a href="#/">Audiology</a></li>
+                      <li><a href="#/">Acute Pain</a></li>
+                      <li><a href="#/">Anaesthesia</a></li>
+                      <li><a href="#/">Audiology</a></li>
+                      <li><a href="#/">Audiology</a></li>
+                      <li><a href="#/">Audiology</a></li>
                     </ul>
                   </div>
                   <div class="faint-horizontal-line"></div>
                   <!--B-->
-                  <div id="alphabet_B" class="B flex-column">
+                  <div id="alphabet_B" class="B flex-column" ng-show="B">
                     <h1 class="purple-text">b</h1>
                     <ul class="B flex">
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
-                      <li><a href="#">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
+                      <li><a href="#/">Blood Test</a></li>
                     </ul>
                   </div>
                   <div class="faint-horizontal-line"></div>
                   <!--C-->
-                  <div id="alphabet_C" class="C flex-column">
+                  <div id="alphabet_C" class="C flex-column" ng-show="C">
                     <h1 class="purple-text">c</h1>
                     <ul class="C flex">
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
-                      <li><a href="#">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
+                      <li><a href="#/">Cardiology </a></li>
                     </ul>
                   </div>
                 </div>

@@ -207,4 +207,29 @@ app.controller("ctrlControl", function ($scope) {
     $scope.kathy_comment = false;
     $scope.justin_comment = true;
   };
+
+  //This controls the services section, it hides and show each test according to alphabets
+  $scope.A = true;
+  $scope.B = true;
+  $scope.C = true;
+  $scope.showAll = function () {
+    $scope.A = true;
+    $scope.B = true;
+    $scope.C = true;
+  };
+  $scope.showA = function () {
+    $scope.A = true;
+    $scope.B = false;
+    $scope.C = false;
+  };
+  $scope.showB = function () {
+    $scope.A = false;
+    $scope.B = true;
+    $scope.C = false;
+  };
+  $scope.showC = function () {
+    $scope.A = false;
+    $scope.B = false;
+    $scope.C = true;
+  };
 });

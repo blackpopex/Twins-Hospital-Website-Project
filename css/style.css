@@ -1006,7 +1006,7 @@ aside {
     z-index: 1;
     height: auto;
     padding: 0.2em 0.8em 1em;
-    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 1px 1px 0.5px rgba(0, 0, 0, 0.1);
     margin-top: 0.2em;
     transition: display 0.5s ease-in-out;
   }
