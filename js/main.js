@@ -83,3 +83,50 @@ function topFunction() {
 }
 
 //add click event to each of the testifers
+
+//jquery
+$(document).ready(function () {
+  $("#justin_p").click(function () {
+    $("#person_one").addClass("showing");
+    $("#person_two").removeClass("showing");
+    $("#person_three").removeClass("showing");
+    $("#person_four").removeClass("showing");
+    $("#justin_p #imageText").addClass("display-text");
+    $("#kathy_p #imageText").removeClass("display-text");
+    $("#morris_p #imageText").removeClass("display-text");
+    $("#sandra_p #imageText").removeClass("display-text");
+  });
+
+  $("#kathy_p").click(function () {
+    $("#person_one").removeClass("showing");
+    $("#person_two").addClass("showing");
+    $("#person_three").removeClass("showing");
+    $("#person_four").removeClass("showing");
+    $("#kathy_p #imageText").addClass("display-text");
+    $("#justin_p #imageText").removeClass("display-text");
+    $("#morris_p #imageText").removeClass("display-text");
+    $("#sandra_p #imageText").removeClass("display-text");
+  });
+
+  $("#morris_p").click(function () {
+    $("#morris_p #imageText").addClass("display-text");
+    $("#kathy_p #imageText").removeClass("display-text");
+    $("#justin_p #imageText").removeClass("display-text");
+    $("#sandra_p #imageText").removeClass("display-text");
+    $("#person_one").removeClass("showing");
+    $("#person_two").removeClass("showing");
+    $("#person_three").addClass("showing");
+    $("#person_four").removeClass("showing");
+  });
+
+  $("#sandra_p").click(function () {
+    $("#person_one").removeClass("showing");
+    $("#person_two").removeClass("showing");
+    $("#person_three").removeClass("showing");
+    $("#person_four").addClass("showing");
+    $("#sandra_p #imageText").addClass("display-text");
+    $("#justin_p #imageText").removeClass("display-text");
+    $("#kathy_p #imageText").removeClass("display-text");
+    $("#morris_p #imageText").removeClass("display-text");
+  });
+});

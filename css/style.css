@@ -2232,6 +2232,9 @@ footer .address-privacy-sitemap ul li:last-child a .text-purple {
   background-color: rgba(56, 53, 124, 0.6);
   transition: top 0.5s ease-in-out;
 }
+.outer-wrapper.showing::after {
+  top: 0;
+}
 
 .outer-wrapper:hover::after {
   top: 0;
@@ -2277,11 +2280,17 @@ footer .address-privacy-sitemap ul li:last-child a .text-purple {
   transform: translateY(25px);
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
-
-#mainBody:hover .imageText {
+.testifier-img-flex:hover .imageText {
   opacity: 1;
   transform: translateY(0);
 }
+
+.icons-wrapper .testifier-img-flex .display-text {
+  top: 100px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /*****add this if a user click on the testifier id and add it.******/
 
 .icons-wrapper .testifier-img-flex:hover .icons-wrapper .testifier-img-flex h4 {
@@ -2331,6 +2340,11 @@ footer .address-privacy-sitemap ul li:last-child a .text-purple {
   max-width: 600px;
   line-height: 1.5;
   font-style: italic;
+}
+
+.testifier-img-flex:hover .imageText {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (min-width: 600px) {
