@@ -869,6 +869,7 @@ aside {
   overflow: hidden;
   transition: max-height 0.5s ease-out;
   background-color: var(--purple-color-primary);
+  padding-left: 1.5em;
 }
 #navbar-3 .header-dropdown-content a {
   color: var(--white-color);
@@ -1643,23 +1644,27 @@ footer .affiliation img {
   flex-direction: column;
 }
 footer .address {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   text-align: center;
   line-height: 0.5;
   width: 100%;
 }
 footer address {
-  font-size: 0.55em;
+  font-size: 0.5em;
   font-family: var(--popping-fontfamily);
   font-style: normal;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.8em;
 }
 footer .address a {
   color: var(--purple-color-primary);
   line-height: 0.8;
+  font-weight: 500;
+}
+footer .address p {
+  font-size: 0.5em;
 }
 footer .address-privacy-sitemap small {
-  font-size: 0.55em;
+  font-size: 0.5em;
   font-family: var(--popping-fontfamily);
   width: 20%;
   max-width: 20px;

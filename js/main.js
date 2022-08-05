@@ -62,6 +62,7 @@ window.onscroll = function () {
   //Declared the scrollfunction() to handle hide and show back to top button;
   scrollFunction();
 };
+
 //The scrollfunction() that displays the button when scroll height is > 500
 var topBtn = document.getElementById("myTopBTN");
 var topBtnText = document.getElementById("BackTopBtn");
@@ -233,3 +234,8 @@ app.controller("ctrlControl", function ($scope) {
     $scope.C = true;
   };
 });
+
+//use this for mobile only
+
+if (window.matchMedia("(max-width:412px)").matches) {
+}
