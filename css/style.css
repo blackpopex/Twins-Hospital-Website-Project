@@ -789,17 +789,16 @@ aside {
     width: 100%;
     max-width: 1000px;
   }
+  /*****ADD FIXED NAVBAR WITH JS*******/
+  .fixedNavbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: fixedNavbar 1s ease-in-out;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+  /*****END******/
 }
-
-/*****ADD FIXED NAVBAR WITH JS*******/
-.fixedNavbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  animation: fixedNavbar 1s ease-in-out;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
-}
-/*****END******/
 
 /***********THIRD NAVBAR*****************/
 .third-navbar-mobile .header-dropdown-content .col-hidden-mobile {
@@ -3435,6 +3434,7 @@ table td:last-child {
     position: relative;
     right: 0;
     left: 0;
+    padding: 0.5em 0;
     margin-right: 0;
     display: flex;
     flex-direction: row;
