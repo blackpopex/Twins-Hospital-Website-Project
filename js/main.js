@@ -68,8 +68,8 @@ var topBtn = document.getElementById("myTopBTN");
 var topBtnText = document.getElementById("BackTopBtn");
 function scrollFunction() {
   if (
-    document.documentElement.scrollTop > 500 ||
-    document.body.scrollTop > 500
+    document.documentElement.scrollTop > 1000 ||
+    document.body.scrollTop > 1000
   ) {
     topBtn.style.display = "block";
     topBtnText.style.display = "block";

@@ -268,12 +268,20 @@ img {
   display: block;
 }
 .flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
 }
 .flex-wrap {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -532,6 +540,10 @@ aside {
 }
 
 .second-navbar .inline-block {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
 }
@@ -590,6 +602,10 @@ aside {
 
 #navbar-2 .flex {
   margin-right: 0.55em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
   margin-bottom: 0.5em;
@@ -651,6 +667,10 @@ aside {
     width: min(90%, 90rem);
     min-height: auto;
     padding: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -659,6 +679,10 @@ aside {
     margin-bottom: 0;
     margin-right: 0;
     margin-left: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -743,7 +767,7 @@ aside {
   }
   .info-box h6 {
     font-weight: 600;
-    font-size: 0.6em;
+    font-size: 0.5em;
   }
   .info-box p {
     font-size: 0.55em;
@@ -764,6 +788,10 @@ aside {
   overflow-y: auto;
   transition: height 1s ease-in-out, opacity 0.5s ease-in;
   background-color: var(--white-color);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   opacity: 0;
@@ -784,6 +812,10 @@ aside {
     overflow-y: hidden;
     opacity: 1;
     background-color: var(--purple-color-primary);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -903,6 +935,10 @@ aside {
   width: 100%;
   max-width: 400px;
   margin-inline: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -951,6 +987,10 @@ aside {
   }
   .third-navbar-mobile nav ul {
     width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1074,6 +1114,10 @@ aside {
   .third-navbar-mobile .header-dropdown-content .panel li a {
     font-size: 0.6em;
     font-weight: 00;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     padding: 0.8em 0;
@@ -1277,6 +1321,10 @@ aside {
 
 /**************************BACK TO TOP **************************/
 .back-top-btn-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -1290,6 +1338,7 @@ aside {
   overflow-y: hidden;
 }
 .scrollTopBtn {
+  display: none;
   width: 40px;
   height: 40px;
   line-height: 10px;
@@ -1391,6 +1440,10 @@ footer .half-section-padding .col-50 .column-25 ul li a:hover {
   footer .half-section-padding .col-50 {
     width: 50%;
     padding: 0 0.5em;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -1420,6 +1473,10 @@ footer .bg-darker-purple .flex {
   flex-direction: column;
 }
 footer .bg-darker-purple .flex-row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1464,6 +1521,10 @@ footer .social-icon-container div {
   width: 80%;
   max-width: 200px;
   margin-inline: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   overflow-x: hidden;
 }
@@ -1475,6 +1536,10 @@ footer .social-icon-container div a {
   background-color: white;
   text-align: center;
   padding: 0.5em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1543,12 +1608,20 @@ footer .social-icon-container div a:hover .fa {
     text-align: center;
   }
   footer .half-section-padding .social-icon-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
   }
   footer .social-icon-container div {
     width: 100%;
     margin-inline: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     overflow-x: hidden;
   }
@@ -2195,6 +2268,10 @@ footer .address-privacy-sitemap ul li:last-child a .text-purple {
   width: 100%;
   max-width: 400px;
   margin: 1.2em auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 .icons-wrapper .testifier-img-flex {
@@ -2217,6 +2294,10 @@ footer .address-privacy-sitemap ul li:last-child a .text-purple {
   border-radius: 50%;
   text-align: center;
   vertical-align: middle;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2700,6 +2781,10 @@ footer .address-privacy-sitemap ul li:last-child a .text-purple {
   .contact-form form .third-row,
   .contact-form form .four-row,
   .contact-form form .fifth-row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -2891,6 +2976,10 @@ aside .bg-darker-purple div:first-child h4 span {
 
 @media (min-width: 1200px) {
   .news-section .flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -2919,6 +3008,10 @@ aside .bg-darker-purple div:first-child h4 span {
 
 .awards-wrapper .flex {
   padding: 1em 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3007,6 +3100,10 @@ aside .bg-darker-purple div:first-child h4 span {
 
 @media (min-width: 768px) {
   .staffMembers-patientStories .flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -3216,6 +3313,10 @@ table td:last-child {
 }
 @media (min-width: 768px) {
   .how-it-began .grid-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -3252,6 +3353,10 @@ table td:last-child {
 @media (min-width: 1200px) {
   .how-it-began .grid-container {
     max-width: 800px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -3261,6 +3366,10 @@ table td:last-child {
     max-width: 700px;
   }
   .how-it-began .grid-container div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -3305,6 +3414,10 @@ table td:last-child {
 }
 @media (min-width: 768px) {
   #map-and-direction .flex-wrap {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -3436,6 +3549,10 @@ table td:last-child {
     left: 0;
     padding: 0.5em 0;
     margin-right: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -3483,7 +3600,9 @@ table td:last-child {
 #find_a_doctor form .search-form {
   width: 100%;
   display: -webkit-box;
+  display: -moz-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   align-items: center;
