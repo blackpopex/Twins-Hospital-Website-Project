@@ -493,6 +493,7 @@ aside {
   z-index: 9999;
   width: 100%;
   top: 0;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 768px) {
   #Header {
@@ -973,7 +974,9 @@ aside {
     padding: 0;
     opacity: 1;
     overflow-y: hidden;
+    z-index: 9;
   }
+
   .third-navbar-mobile .flex {
     flex-direction: row;
     justify-content: space-between;
@@ -1040,7 +1043,6 @@ aside {
   /******dropdown*******/
   .third-navbar-mobile .header-dropdown-content {
     position: absolute;
-    display: none;
     width: 80%;
     max-width: 700px;
     z-index: 1;
@@ -1048,12 +1050,17 @@ aside {
     padding: 0.2em 0.8em 1em;
     box-shadow: 2px 1px 1px 0.5px rgba(0, 0, 0, 0.1);
     margin-top: 0.2em;
-    transition: display 0.5s ease-in-out;
+    transform: translateY(-10px);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    display: block;
+    visibility: hidden;
   }
 
-  .third-navbar-mobile .dropdown:hover .header-dropdown-content {
-    display: block;
+  .third-navbar-mobile .dropdown-content-activated {
+    transform: translateY(0);
+    visibility: visible;
   }
+
   .third-navbar-mobile .header-dropdown-content .col-hidden-mobile,
   .third-navbar-mobile .header-dropdown-content .panel {
     display: block; /******Hide photos on dropdown menu on mobile*******/
@@ -1300,6 +1307,71 @@ aside {
 
 #hero_container {
   padding-bottom: 0;
+  position: relative;
+}
+
+.absolute-hero-text {
+  position: absolute;
+  top: 55%;
+  left: 4%;
+  width: 100%;
+}
+.absolute-hero-text .align-left {
+  width: 100%;
+  max-width: 180px;
+}
+.absolute-hero-text .align-left h1 {
+  margin-bottom: 0;
+  line-height: 1.2;
+  font-size: 0.55em;
+  display: block;
+  font-family: var(--playfiar-display);
+  text-shadow: 1px 1px rgba(56, 53, 124, 0.2);
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.absolute-hero-text .align-left h1 span {
+  text-transform: uppercase;
+  color: var(--qrt-semi-purple-color-secondary);
+  font-weight: 600;
+}
+
+.absolute-hero-text .align-left p {
+  line-height: 1;
+  margin-top: 0.25em;
+  color: var(--black-color);
+  font-weight: 300;
+  margin-bottom: 0;
+  visibility: hidden;
+}
+.absolute-hero-text .align-left a {
+  background-color: var(--purple-color-primary);
+  padding: 0.5em 1em;
+  font-size: 0.5em;
+  margin-left: 50px;
+  color: var(--white-color);
+  font-weight: 500;
+  visibility: hidden;
+}
+
+@media (min-width: 600px) {
+  .absolute-hero-text {
+    left: 3%;
+    top: 50%;
+  }
+  .absolute-hero-text .align-left {
+    max-width: 250px;
+  }
+  .absolute-hero-text .align-left h1 {
+    font-size: 0.85em;
+  }
+  .absolute-hero-text .align-left p {
+    line-height: 1.2;
+  }
+  .absolute-hero-text .align-left a {
+    margin-left: 50px;
+    padding-inline: 2em;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1310,10 +1382,91 @@ aside {
   .activated-hero-image-container {
     margin-top: 2rem;
   }
+
+  .absolute-hero-text {
+    top: 20%;
+  }
+  .absolute-hero-text .align-left {
+    max-width: 242px;
+  }
+  .absolute-hero-text .align-left h1 {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  .absolute-hero-text .align-left h1 span {
+    font-weight: 600;
+  }
+
+  .absolute-hero-text .align-left p {
+    visibility: visible;
+  }
+  .absolute-hero-text .align-left a {
+    margin-left: 35px;
+  }
 }
 @media (min-width: 992px) {
   .activated-hero-image-container {
     margin-top: 2rem;
+  }
+  .absolute-hero-text {
+    top: 20%;
+  }
+  .absolute-hero-text .align-left {
+    max-width: 312px;
+  }
+  .absolute-hero-text .align-left h1 {
+    font-size: 0.9em;
+  }
+
+  .absolute-hero-text .align-left a {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .absolute-hero-text {
+    top: 25%;
+  }
+  .absolute-hero-text .align-left {
+    max-width: 390px;
+  }
+  .absolute-hero-text .align-left h1 {
+    font-size: 1.125em;
+    line-height: 0.9;
+  }
+
+  .absolute-hero-text .align-left a {
+    margin-left: 4px;
+    margin-top: 2em;
+    font-size: 0.55em;
+    font-weight: 300;
+    visibility: visible;
+  }
+}
+@media (min-width: 1400px) {
+  .absolute-hero-text {
+    left: 0;
+  }
+  .absolute-hero-text .align-left p {
+    margin-bottom: 0.5em;
+  }
+}
+@media (min-width: 1700px) {
+  .absolute-hero-text {
+    left: 1%;
+    top: 25%;
+  }
+
+  .absolute-hero-text .align-left {
+    max-width: 500px;
+  }
+  .absolute-hero-text .align-left h1 {
+    font-size: 2em;
+  }
+
+  .absolute-hero-text .align-left a {
+    padding: 0.5em 1.5em;
+    font-size: 0.65em;
   }
 }
 

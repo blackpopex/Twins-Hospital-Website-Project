@@ -84,6 +84,16 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+const dropdownButtons = document.querySelectorAll(".dropbtn-accordion");
+const myDropdownWrapper = document.querySelectorAll(".header-dropdown-content");
+for (let i = 0; i < dropdownButtons.length; i++) {
+  dropdownButtons[i].addEventListener("click", function () {
+    dropdownButtons[i].nextElementSibling.classList.toggle(
+      "dropdown-content-activated"
+    );
+  });
+}
+
 //JQUERY
 
 //toggle the active class when tab links pay a bill, accepted insurance and visitors information is clicked.
@@ -236,6 +246,9 @@ app.controller("ctrlControl", function ($scope) {
 });
 
 //use this for mobile only
-
-if (window.matchMedia("(max-width:412px)").matches) {
+if (window.matchMedia("(max-width: 600px)").matches) {
+  document.querySelector("#hero_image").src = "img/hero-image/twins-mobile.jpg";
+} else {
+  document.querySelector("#hero_image").src =
+    "img/hero-image/twins-hero-image-large.jpg";
 }
