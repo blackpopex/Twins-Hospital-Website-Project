@@ -677,6 +677,12 @@ aside {
   margin-left: 10px;
   display: block;
 }
+
+.fa-times {
+  cursor: pointer;
+  width: 20px;
+  margin-left: auto;
+}
 /*********RESPONSIVENESS(TABLET)*******************/
 @media (min-width: 768px) {
   #navbar-2 {

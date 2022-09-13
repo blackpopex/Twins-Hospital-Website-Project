@@ -29,6 +29,7 @@ searchButton.addEventListener("click", function () {
     dropdownMenubar.classList.remove("showmenu");
   }
   thirdNavbar.classList.toggle("showSearchContainer");
+  searchButton.classList.toggle("fa-times");
 });
 hamburgerMenuBTN.addEventListener("click", function () {
   if (thirdNavbar.classList.contains("showSearchContainer")) {
