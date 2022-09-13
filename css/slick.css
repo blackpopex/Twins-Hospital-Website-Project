@@ -1,15 +1,12 @@
 /* Slider */
 .slick-slider {
   position: relative;
-
   display: block;
   box-sizing: border-box;
-
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
   -webkit-touch-callout: none;
   -khtml-user-select: none;
   -ms-touch-action: pan-y;
@@ -174,13 +171,14 @@
 .slick-slider .slick-dots button {
   border: none;
   display: block;
-  width: 16px;
-  height: 16px;
-  border-radius: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
   padding: 0;
   text-align: center;
+  background-color: #cdccf4;
 }
 .slick-slider .slick-dots li.slick-active button {
-  background-color: #1f9588;
-  color: #fff;
+  background-color: #38357c;
+  color: #cdccf4;
 }
