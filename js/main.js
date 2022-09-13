@@ -249,7 +249,13 @@ app.controller("ctrlControl", function ($scope) {
 //use this for mobile only
 if (window.matchMedia("(max-width: 600px)").matches) {
   document.querySelector("#hero_image").src = "img/hero-image/twins-mobile.jpg";
+  $(document).ready(function () {
+    $("#myQuickNavigation").addClass("slick-slider-container");
+  });
 } else {
   document.querySelector("#hero_image").src =
     "img/hero-image/twins-hero-image-large.jpg";
+  $(document).ready(function () {
+    $("#myQuickNavigation").removeClass("slick-slider-container");
+  });
 }
