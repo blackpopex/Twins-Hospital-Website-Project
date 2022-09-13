@@ -41,6 +41,8 @@ hamburgerMenuBTN.addEventListener("click", function () {
 var prevScollPos = window.pageYOffset;
 //HERE WINDOW.ONSCROLL FUNCTION IS USED TO SOLVE BOTH NAVBAR FIXED TO TOP AND BACK TO THE TOP BTN HIDE AND SHOW
 window.onscroll = function () {
+  scrollFunction();
+
   var currentScrollPos = window.pageYOffset;
   if (prevScollPos < currentScrollPos) {
     document.getElementById("secondThirdNavbar").classList.add("fixedNavbar");
@@ -58,9 +60,6 @@ window.onscroll = function () {
       .classList.remove("activated-hero-image-container");
   }
   prevScollPos = currentScrollPos;
-
-  //Declared the scrollfunction() to handle hide and show back to top button;
-  scrollFunction();
 };
 
 //The scrollfunction() that displays the button when scroll height is > 500

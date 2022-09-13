@@ -952,7 +952,11 @@ aside {
   border: none;
   outline: none;
   box-sizing: border-box;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 1px 1px rgba(70, 70, 70, 0.1);
+  transition: box-shadow 0.5s ease;
+}
+.third-navbar-mobile form input[type="text"]:focus {
+  box-shadow: 1px 1px 1px 1px rgba(56, 53, 124, 0.2);
 }
 .third-navbar-mobile form button {
   width: 15%;
@@ -1546,7 +1550,7 @@ aside {
     height: 50px;
   }
   .scrollTopBtn .fa {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 }
 /**************************FOOTER*****************************/
