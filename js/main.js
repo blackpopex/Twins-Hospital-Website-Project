@@ -35,6 +35,7 @@ hamburgerMenuBTN.addEventListener("click", function () {
     thirdNavbar.classList.remove("showSearchContainer");
   }
   dropdownMenubar.classList.toggle("showmenu");
+  hamburgerMenuBTN.classList.toggle("change");
 });
 
 //Disclares the scroll height of the webpage

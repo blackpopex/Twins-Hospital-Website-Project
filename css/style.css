@@ -648,10 +648,26 @@ aside {
   display: block;
 }
 .hamburger-menu .span {
-  width: 28px;
+  width: 35px;
   height: 2.5px;
   background-color: var(--white-color);
   margin: 5px 0;
+  transition: transform 0.5s ease-in, opacity 0.5s ease-in;
+}
+
+.span:last-child {
+  margin-bottom: 0;
+}
+
+.change .bar1 {
+  transform: translateX(-10px);
+}
+.change .bar2 {
+  opacity: 0;
+  margin-bottom: 2px;
+}
+.change .bar3 {
+  transform: translateX(10px);
 }
 
 #SearchBTN {
