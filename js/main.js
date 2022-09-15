@@ -27,6 +27,7 @@ dropdownMenubar = document.getElementById("mobileMenu");
 searchButton.addEventListener("click", function () {
   if (dropdownMenubar.classList.contains("showmenu")) {
     dropdownMenubar.classList.remove("showmenu");
+    hamburgerMenuBTN.classList.remove("change");
   }
   thirdNavbar.classList.toggle("showSearchContainer");
   searchButton.classList.toggle("fa-times");
