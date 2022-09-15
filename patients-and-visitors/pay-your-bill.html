@@ -524,7 +524,7 @@
                     information can be found on the paper bill you receive in
                     the mail. This is a one-time payment process.
                   </p>
-                  <a href="#/" class="btn btn-bg-purple"
+                  <a href="#/" class="btn btn-bg-purple" id="openPaymentGateway"
                     >Pay Your Bill
                     <i class="fa fa-fw fa-chevron-right angle-white"></i
                   ></a>
@@ -636,7 +636,7 @@
 
           <!--JAVASCRIPT PAYMENT GATEWAY-->
           <div id="overlay_container" class="payment-overlay">
-            <span class="closeBtn" id="myCloseBTN">&times;</span>
+            <span class="closeOverlayBtn" id="myCloseBTN">&times;</span>
             <div class="payment_gateway_wrapper">
               <div class="payment-content">
                 <div>
@@ -696,7 +696,7 @@
                       </div>
                     </div>
 
-                    <button type="submit" class="btn btn-bg-purple">
+                    <button type="submit" class="btn btn-bg-purple" id="payNow">
                       Pay Now
                     </button>
                   </form>
@@ -955,5 +955,6 @@
     </footer>
     <script src="../js/main.js"></script>
     <script src="../js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="../js/openPaymentGateWay.js"></script>
   </body>
 </html>

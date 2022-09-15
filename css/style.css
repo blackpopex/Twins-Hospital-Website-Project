@@ -4146,17 +4146,23 @@ table td:last-child {
 .payment-overlay {
   position: fixed;
   top: 0;
-  left: 0;
+  left: -50px;
   bottom: 0;
-  width: 100%;
+  width: 0;
+  overflow-x: hidden;
   height: 100%;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 9999;
   padding: 2em 1em;
   transition: width 0.25s ease-in;
+  white-space: nowrap;
 }
-.payment-overlay .closeBtn {
+.activate-overlay {
+  width: 100%;
+  left: 0;
+}
+.payment-overlay .closeOverlayBtn {
   color: var(--white-color);
   font-size: 2em;
   cursor: pointer;
@@ -4177,17 +4183,19 @@ table td:last-child {
 }
 .payment-content {
   height: auto;
-  /*
-  transform: translateY(50%);
-  */
+  transform: translateY(75%);
   background: hsl(0 0% 100% / 0.88);
   backdrop-filter: blur(0.0000125rem);
   padding: 2em 1em 1em;
-  transition: transform 0.1s ease-in;
+  opacity: 0;
+  transition: transform 0.8s ease, opacity 1.6s ease;
+  position: absolute;
+  width: 100%;
 }
 /*add this class to payment-content*/
 .show-payment-gateway {
   transform: translateY(0);
+  opacity: 1;
 }
 
 .payment-content h4 {
@@ -4259,21 +4267,27 @@ table td:last-child {
   .payment-text-logo img {
     max-width: 150px;
   }
+}
+@media (min-width: 1200px) {
   .payment_gateway_wrapper {
     max-width: 600px;
   }
-}
-@media (min-width: 1200px) {
   .payment-content .payment-text-logo h6 {
-    font-size: 1em;
-  }
-  .payment_gateway_wrapper {
-    max-width: 700px;
+    font-size: 0.8em;
   }
 }
 
 @media (min-width: 1600px) {
   .payment-content h4 {
     font-size: 1.65em;
+  }
+  .payment_gateway_wrapper {
+    max-width: 700px;
+  }
+  .payment-text-logo {
+    max-width: 400px;
+  }
+  .payment-text-logo img {
+    max-width: 170px;
   }
 }
