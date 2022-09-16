@@ -4227,7 +4227,7 @@ table td:last-child {
 }
 
 @media (min-width: 600px) {
-  .payment-overlay .closeBtn {
+  .payment-overlay .closeOverlayBtn {
     font-size: 2.5em;
     margin-right: 0.5em;
   }
@@ -4239,7 +4239,7 @@ table td:last-child {
   }
 }
 @media (min-width: 768px) {
-  .payment-overlay .closeBtn {
+  .payment-overlay .closeOverlayBtn {
     font-size: 2.25em;
     font-weight: 400;
   }
@@ -4252,8 +4252,11 @@ table td:last-child {
   }
 }
 @media (min-width: 992px) {
-  .payment-overlay .closeBtn {
+  .payment-overlay .closeOverlayBtn {
     margin-right: 1em;
+  }
+  .payment-content {
+    padding: 2em 1em 2em;
   }
   .payment-content h4 {
     font-size: 1.5em;
@@ -4284,6 +4287,7 @@ table td:last-child {
   .payment_gateway_wrapper {
     max-width: 700px;
   }
+
   .payment-text-logo {
     max-width: 400px;
   }

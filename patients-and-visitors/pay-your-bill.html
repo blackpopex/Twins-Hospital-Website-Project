@@ -649,54 +649,96 @@
                 <div class="faint-horizontal-line"></div>
 
                 <div class="contact-form">
-                  <form action="#/" method="post">
+                  <form
+                    id="paymentForm"
+                    onsubmit="clearInput()"
+                    autocomplete="off"
+                  >
                     <!--Row one-->
                     <div class="row first-row">
                       <div class="column-48">
                         <label for="fname">First Name: <span>*</span></label>
-                        <input type="text" name="first-Name" id="fname" />
+                        <input
+                          type="text"
+                          name="first-Name"
+                          id="first-name"
+                          required
+                        />
                       </div>
                       <div class="column-48">
                         <label for="lname">Last Name: <span>*</span></label>
-                        <input type="text" name="last-Name" id="lname" />
+                        <input
+                          type="text"
+                          name="last-Name"
+                          id="last-name"
+                          required
+                        />
                       </div>
                     </div>
 
                     <!--Row two-->
                     <div class="row second-row">
                       <div class="column-100">
-                        <label for="email">Email:</label>
-                        <input type="text" name="e-Mail" id="email" />
+                        <label for="email-address">Email: <span>*</span></label>
+                        <input
+                          type="text"
+                          name="email-address"
+                          id="email-address"
+                          required
+                        />
                       </div>
                     </div>
 
                     <!--Row three-->
                     <div class="row third-row">
                       <div class="column-48">
-                        <label for="paymen_for">Payment For: </label>
-                        <select name="paymentFor" id="payment_for">
-                          <option value="Please Select an Option">
-                            Please Select an Option
+                        <label for="paymen_for"
+                          >Payment For: <span>*</span></label
+                        >
+                        <select
+                          name="paymentFor"
+                          id="payment_for"
+                          required
+                          onchange="inputAmount()"
+                        >
+                          <option value="Please select an option">
+                            Please select an option
                             <i
                               class="fa fa-chevron-angle-down purple-text"
                               id="chevron-right"
                             ></i>
                           </option>
-                          <option value="Consultation">Consultation</option>
-                          <option value="Surgery">Surgery</option>
+                          <option value="General Consultation">
+                            General Consultation
+                          </option>
+                          <option value="Gynaecologist Review">
+                            Gynaecologist Review
+                          </option>
+                          <option value="Admission Deposit">
+                            Admission Deposit
+                          </option>
+                          <option value="Neurosurgery Consultation">
+                            Neurosurgery Consultation
+                          </option>
+                          <option value="Orthopadic Consultation">
+                            Orthopadic Consultation
+                          </option>
+                          <option value="ENT Consultation">
+                            ENT Consultation
+                          </option>
                         </select>
                       </div>
                       <div class="column-48">
-                        <label for="Amount_to_pay">Amount to Pay:</label>
-                        <input
-                          type="text"
-                          name="AmountToPay"
-                          id="Amount_to_pay"
-                        />
+                        <label for="amount">Amount to Pay:</label>
+                        <input type="text" name="amount" id="amount" disabled />
                       </div>
                     </div>
 
-                    <button type="submit" class="btn btn-bg-purple" id="payNow">
+                    <button
+                      type="submit"
+                      class="btn btn-bg-purple"
+                      onclick="payWithPaystack()"
+                    >
                       Pay Now
                     </button>
                   </form>
@@ -704,6 +746,7 @@
               </div>
             </div>
           </div>
+
           <!--JAVASCRIPT PAYMENT GATEWAY ENDS-->
         </div>
       </section>
@@ -954,7 +997,9 @@
       </div>
     </footer>
     <script src="../js/main.js"></script>
-    <script src="../js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="../js/"></script>
     <script src="../js/openPaymentGateWay.js"></script>
+    <script src="../js/paystackIntegrationServices.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
   </body>
 </html>
