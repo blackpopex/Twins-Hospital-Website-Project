@@ -1006,13 +1006,15 @@ aside {
   transition: transform 1s ease;
   color: var(--purple-color-primary);
   padding: 0.5em;
-  opacity: 1;
+  opacity: 0;
   box-shadow: var(--default-box-shadow-2);
+  visibility: hidden;
 }
 
 .show-searchResultWrapper {
   transform: translateY(0);
   opacity: 1;
+  visibility: visible;
 }
 .show-searchResultWrapper a,
 .show-searchResultWrapper h4 {
