@@ -975,6 +975,7 @@ aside {
   outline: none;
   box-sizing: border-box;
   box-shadow: 1px 1px 1px 1px rgba(70, 70, 70, 0.1);
+  color: var(--purple-color-primary);
   transition: box-shadow 0.5s ease;
 }
 .third-navbar-mobile form input[type="text"]:focus {
@@ -1007,7 +1008,7 @@ aside {
   color: var(--purple-color-primary);
   padding: 0.5em;
   opacity: 0;
-  box-shadow: var(--default-box-shadow-2);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
   visibility: hidden;
 }
 
@@ -1019,7 +1020,7 @@ aside {
 .show-searchResultWrapper a,
 .show-searchResultWrapper h4 {
   color: var(--purple-color-primary);
-  opacity: 0.7;
+  opacity: 0.9;
   font-family: var(--slabo-fontFamily-links-buttons-paragraph);
 }
 
@@ -1207,7 +1208,7 @@ aside {
     max-width: 600px;
   }
   .searchResultWrapper {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.85);
     max-width: 250px;
   }
 }
@@ -2210,6 +2211,7 @@ footer .address-privacy-sitemap ul li:last-child a .text-purple {
 }
 #whatWeDo .test-container-numeric-value-name .box-33 h5 {
   font-size: 1em;
+  font-weight: 400;
 }
 
 #whatWeDo .test-container-numeric-value-name a.text-center {

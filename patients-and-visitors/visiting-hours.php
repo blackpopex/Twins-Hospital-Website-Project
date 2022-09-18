@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Twins Hospital | Visitors</title>
+    <title>Twins Hospital | Visiting Hours</title>
     <link rel="icon" type="image/x-icon" href="./img/logo/favicon.ico.png" />
     <meta name="description" content="" />
     <meta charset="UTF-8" />
@@ -18,6 +18,44 @@
       src="https://kit.fontawesome.com/f1874d02aa.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      //Search Container
+
+      //Clear Input filed when close BTN is clicked
+      $(document).ready(function () {
+        $("#SearchBTN").click(function () {
+          $("#searchQuery").val("");
+          $("#searchWrapper").removeClass("show-searchResultWrapper");
+        });
+      });
+
+      searchBTN.addEventListener("click", function () {
+        inputValue.value = "hello";
+      });
+      //Ajax codes
+      function showSearchBox(str) {
+        if (str.length == 0) {
+          document.getElementById("showSearchResult").innerHTML = " ";
+          document
+            .getElementById("searchWrapper")
+            .classList.remove("show-searchResultWrapper");
+          return;
+        }
+
+        var ajaxCall = new XMLHttpRequest();
+        ajaxCall.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("showSearchResult").innerHTML =
+              this.responseText;
+            document
+              .getElementById("searchWrapper")
+              .classList.add("show-searchResultWrapper");
+          }
+        };
+        ajaxCall.open("GET", "searchResult.php?q=" + str, true);
+        ajaxCall.send();
+      }
+    </script>
   </head>
   <body>
     <!-----------------------------------------------HEADER BEGINS------------------------------------------------------------------>
@@ -28,7 +66,7 @@
         <div class="first-navbar bg-darker-purple">
           <div class="flex-end container">
             <ul class="inline-block">
-              <li><a href="../career.html">Career</a></li>
+              <li><a href="#/">Career</a></li>
               <li><a href="#">Donate Now</a></li>
             </ul>
           </div>
@@ -39,7 +77,7 @@
           <!-----------Second Navbar------------->
           <div class="second-navbar bg-lighter-purple">
             <div class="flex container">
-              <a href="../index.html" id="logo" class="logo-brand">
+              <a href="../index.php" id="logo" class="logo-brand">
                 <img
                   src="../img/logo/Western lighter logo.jpg"
                   alt="Hospital logo"
@@ -70,31 +108,32 @@
                           <!-- SHOW ON LARGE AND MOBILE SCREENS -->
                           <ul class="col-30 panel">
                             <li>
-                              <a href="../about-us/history.html">History</a>
+                              <a href="../about-us/history.php">History</a>
                             </li>
                             <li>
-                              <a href="../about-us/awards-and-recognition.html"
-                                >Awards & Recognition</a
+                              <a
+                                href="../about-us/awards-and-accreditation.php"
+                                >Awards & Accreditation</a
                               >
                             </li>
                             <li>
-                              <a href="../about-us/mission-vision-values.html"
+                              <a href="../about-us/mission-vision-values.php"
                                 >Vision, Mission & Values</a
                               >
                             </li>
                             <li>
-                              <a href="../about-us/meet-the-team.html"
+                              <a href="../about-us/meet-the-team.php"
                                 >Meet the Team</a
                               >
                             </li>
                             <li>
-                              <a href="../about-us/patient-stories.html"
+                              <a href="../about-us/patient-stories.php"
                                 >Patient Stories</a
                               >
                             </li>
                             <li>
-                              <a href="../about-us/phone-directories.html"
-                                >Phone Directories</a
+                              <a href="../about-us/phone-directory.php"
+                                >Phone Directory</a
                               >
                             </li>
                           </ul>
@@ -108,64 +147,64 @@
                         <div class="header-dropdown-content">
                           <!-- SHOW ON LARGE AND MOBILE SCREENS -->
                           <ul class="col-25 panel">
-                            <li>
-                              <a href="../patients-and-visitors/visitors.html"
+                           <li>
+                              <a href="../patients-and-visitors/visitors.php"
                                 >Visitors</a
                               >
                             </li>
                             <li>
                               <a
-                                href="../patients-and-visitors/visiting-hours.html"
+                                href="../patients-and-visitors/visiting-hours.php"
                                 >Visiting Hours</a
                               >
                             </li>
                             <li>
                               <a
-                                href="../patients-and-visitors/your-visits-or-stay.html"
+                                href="../patients-and-visitors/your-visits-or-stay.php"
                                 >Your Visits or Stay</a
                               >
                             </li>
                             <li>
                               <a
-                                href="../patients-and-visitors/what-to-expect.html"
+                                href="../patients-and-visitors/what-to-expect.php"
                                 >What to Expect</a
                               >
                             </li>
                             <li>
                               <a
-                                href="../patients-and-visitors/patient-rights-and-responsibilities.html"
+                                href="../patients-and-visitors/patient-rights-and-responsibilities.php"
                                 >Patient Rights & Responsibilities</a
                               >
                             </li>
                           </ul>
                           <ul class="col-25 panel">
-                            <li>
+                             <li>
                               <a
-                                href="../patients-and-visitors/accepted-insurance.html"
+                                href="../patients-and-visitors/accepted-insurance.php"
                                 >Accepted Insurance</a
                               >
                             </li>
                             <li>
                               <a
-                                href="../patients-and-visitors/billing-and-financial-asistance.html"
+                                href="../patients-and-visitors/billing-and-financial-asistance.php"
                                 >Biling and Financial Asistance</a
                               >
                             </li>
                             <li>
                               <a
-                                href="../patients-and-visitors/pay-your-bill.html"
+                                href="../patients-and-visitors/pay-your-bill.php"
                                 >Pay your Bill</a
                               >
                             </li>
                             <li>
                               <a
-                                href="../patients-and-visitors/medical-records.html"
+                                href="../patients-and-visitors/medical-records.php"
                                 >Request Medical Records</a
                               >
                             </li>
                             <li>
                               <a
-                                href="../patients-and-visitors/patient-education.html"
+                                href="../patients-and-visitors/patient-education.php"
                                 >Patient Education</a
                               >
                             </li>
@@ -173,23 +212,23 @@
                         </div>
                       </li>
                       <!--Other non dropdown section-->
-                      <li>
+                     <li>
                         <a
-                          href="../services.html"
+                          href="../services.php"
                           class="dropbtn-accordion-children"
                           >Services</a
                         >
                       </li>
                       <li>
                         <a
-                          href="../map-and-direction.html"
+                          href="../map-and-direction.php"
                           class="dropbtn-accordion-children"
                           >Map & Directions</a
                         >
                       </li>
                       <li>
                         <a
-                          href="../contact-us.html"
+                          href="../contact-us.php"
                           class="dropbtn-accordion-children"
                           >Contact Us</a
                         >
@@ -273,32 +312,32 @@
                         </div>
                         <!--------------- SHOW ON LARGE AND MOBILE SCREENS ---------->
                         <ul class="col-30 panel">
-                          <li>
-                            <a href="../about-us/history.html">History</a>
+                           <li>
+                            <a href="../about-us/history.php">History</a>
                           </li>
                           <li>
-                            <a href="../about-us/awards-and-recognition.html"
-                              >Awards & Recognition</a
+                            <a href="../about-us/awards-and-accreditation.php"
+                              >Awards & Accreditation</a
                             >
                           </li>
                           <li>
-                            <a href="../about-us/mission-vision-values.html"
+                            <a href="../about-us/mission-vision-values.php"
                               >Vision, Mission & Values</a
                             >
                           </li>
                           <li>
-                            <a href="../about-us/meet-the-team.html"
+                            <a href="../about-us/meet-the-team.php"
                               >Meet the Team</a
                             >
                           </li>
                           <li>
-                            <a href="../about-us/patient-stories.html"
+                            <a href="../about-us/patient-stories.php"
                               >Patient Stories</a
                             >
                           </li>
                           <li>
-                            <a href="../about-us/phone-directories.html"
-                              >Phone Directories</a
+                            <a href="../about-us/phone-directory.php"
+                              >Phone Directory</a
                             >
                           </li>
                         </ul>
@@ -344,64 +383,64 @@
                         </div>
                         <!-------------- SHOW ON LARGE AND MOBILE SCREENS ------------->
                         <ul class="col-25 panel">
-                          <li>
-                            <a href="../patients-and-visitors/visitors.html"
+                           <li>
+                            <a href="../patients-and-visitors/visitors.php"
                               >Visitors</a
                             >
                           </li>
                           <li>
                             <a
-                              href="../patients-and-visitors/visiting-hours.html"
+                              href="../patients-and-visitors/visiting-hours.php"
                               >Visiting Hours</a
                             >
                           </li>
                           <li>
                             <a
-                              href="../patients-and-visitors/your-visits-or-stay.html"
+                              href="../patients-and-visitors/your-visits-or-stay.php"
                               >Your Visits or Stay</a
                             >
                           </li>
                           <li>
                             <a
-                              href="../patients-and-visitors/what-to-expect.html"
+                              href="../patients-and-visitors/what-to-expect.php"
                               >What to Expect</a
                             >
                           </li>
                           <li>
                             <a
-                              href="../patients-and-visitors/patient-rights-and-responsibilities.html"
+                              href="../patients-and-visitors/patient-rights-and-responsibilities.php"
                               >Patient Right & Responsibilities</a
                             >
                           </li>
                         </ul>
                         <ul class="col-25 panel">
-                          <li>
+                            <li>
                             <a
-                              href="../patients-and-visitors/accepted-insurance.html"
+                              href="../patients-and-visitors/accepted-insurance.php"
                               >Accepted Insurance</a
                             >
                           </li>
                           <li>
                             <a
-                              href="../patients-and-visitors/billing-and-financial-asistance.html"
+                              href="../patients-and-visitors/billing-and-financial-asistance.php"
                               >Billing and Financial Asistance</a
                             >
                           </li>
                           <li>
                             <a
-                              href="../patients-and-visitors/pay-your-bill.html"
+                              href="../patients-and-visitors/pay-your-bill.php"
                               >Pay your Bill</a
                             >
                           </li>
                           <li>
                             <a
-                              href="../patients-and-visitors/medical-records.html"
+                              href="../patients-and-visitors/medical-records.php"
                               >Request Medical Records</a
                             >
                           </li>
                           <li>
                             <a
-                              href="../patients-and-visitors/patient-education.html"
+                              href="../patients-and-visitors/patient-education.php"
                               >Patient Education</a
                             >
                           </li>
@@ -410,13 +449,13 @@
                     </div>
                   </li>
                   <li class="tk-font">
-                    <a href="../services.html">Services</a>
+                    <a href="../services.php">Services</a>
                   </li>
                   <li class="tk-font">
-                    <a href="../map-and-direction.html">Map & Directions</a>
+                    <a href="../map-and-direction.php">Map & Directions</a>
                   </li>
                   <li class="tk-font">
-                    <a href="../contact-us.html">Contact Us</a>
+                    <a href="../contact-us.php">Contact Us</a>
                   </li>
                 </ul>
               </nav>
@@ -427,10 +466,17 @@
                   <input
                     type="text"
                     placeholder="Search..."
-                    id="Search"
                     name="Search"
+                    onkeyup="showSearchBox(this.value)"
+                    id="searchQuery"
                   />
                   <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+                <div class="searchResultWrapper" id="searchWrapper">
+                  <div
+                    id="showSearchResult"
+                    class="search_result_container"
+                  ></div>
                 </div>
               </form>
             </div>
@@ -441,7 +487,7 @@
       <!-------------------------HEADER SECTION  ----------style="box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1)"------------>
       <section id="sectionHeader">
         <div class="section-image-container">
-          <div class="header-bg-image visitors-bg-image"></div>
+          <div class="header-bg-image visting-hours-bg-image"></div>
         </div>
         <div class="container">
           <!--max-width: 80px-->
@@ -449,11 +495,11 @@
             <h5 class="purple-text">You Are Here:</h5>
             <ul style="padding: 0.5em 0">
               <li>
-                <a href="../index.html">
+                <a href="../index.php">
                   <i class="fa fa-fw fa-home purple-text" aria-hidden="true"></i
                 ></a>
               </li>
-              <li style="color: #bbbbbb">Visitors</li>
+              <li style="color: #bbbbbb">Visting-Hours</li>
             </ul>
           </div>
         </div>
@@ -464,71 +510,58 @@
 
     <!---------------------------------------------------------------------MAIN PAGE CONTENT----------------------------------------------------------------->
     <main>
-      <section id="history">
+      <section id="Visiting_Hours">
         <div class="container">
           <div class="flex align-start">
             <!--column to left-->
             <div class="col-70">
-              <div class="visit">
-                <h3 class="purple-text text-left">Visitors Guidelines</h3>
-                <div>
-                  <p>How many people can visit or be with a patient?</p>
+              <div class="visiting-hours">
+                <h3 class="purple-text text-left">
+                  Last Updated: May 20, 2022
+                </h3>
+                <div class="margin-bottom margin-top">
+                  <h4 class="purple-text">Visiting Hours</h4>
+                  <p>
+                    At Children's National Hospital, parents and guardians can
+                    be with their child 24 hours a day, 7 days a week. All other
+                    visitors can see patients from 9 a.m. to 9 p.m. daily.
+                  </p>
+                </div>
+                <div class="margin-bottom">
+                  <h4 class="purple-text">Visiting Guidelines</h4>
+
+                  <p>
+                    During the coronavirus (COVID-19) outbreak, Children’s
+                    National is taking extra steps to protect our patients,
+                    families and staff. Effective March 3, 2022:
+                  </p>
+
                   <ul class="margin-bottom circular-dots">
                     <li>
-                      Staying in the hospital: 2 visitors allowed from 8 a.m -
-                      9pm and 1 overnight visitor allowed
+                      <span class="bold">Visitor screening</span>
+                      We screen patients and parents, caregivers,We screen
+                      patients and parents, caregivers, family members and
+                      visitors for the following COVID-19 symptoms at our
+                      Welcome Desks and check-in areas at all locations: fever,
+                      cough, shortness of breath, sore throat and/or respiratory
+                      symptoms. Any individual with signs/symptoms of infection
+                      are prohibited to visit.
                     </li>
-                    <li>In the ER: 2 people allowed</li>
-                    <li>At clinic appointment: 2 people allowed</li>
+                    <li>
+                      <span class="bold"
+                        >Outpatient appointments (including the ED)</span
+                      >
+                      We screen patients Two parents/guardians can accompany one
+                      patient to an outpatient appointment or ED visit.
+                    </li>
+                    <li>
+                      <span class="bold">Primary care appointments.</span>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Sequi modi eos error impedit voluptate sed, doloribus
+                      obcaecati est dicta quibusdam distinctio earum blanditiis
+                      enim qui.
+                    </li>
                   </ul>
-
-                  <p>At medical visits and in the hospital, visitors must:</p>
-
-                  <ul class="margin-bottom circular-dots">
-                    <li>Wear a mask</li>
-                    <li>Be 12 or older</li>
-                    <li>Not have Covid-19 symptoms or exposures</li>
-                  </ul>
-                </div>
-
-                <div class="margin-bottom">
-                  <h4 class="purple-text">Bringing Your Child as a Visitor</h4>
-                  <p>
-                    In most cases, children over 12 can visit someone in the
-                    hospital. However, some areas, such as the behavioral health
-                    areas, have more restrictions. Call 434.924.3627 before you
-                    come to confirm specific visitor restrictions and
-                    exceptions.
-                  </p>
-                </div>
-
-                <div class="margin-bottom">
-                  <h4 class="purple-text">
-                    When You Can Have a Visitor: Policy Exceptions
-                  </h4>
-                  <p>
-                    For questions about exceptions and beyond what's listed
-                    here, talk to the unit manager or the patient's care team.
-                    They will review your request.
-                  </p>
-
-                  <div>
-                    <h5 class="black-text">End of Life</h5>
-                    <p>If facing death, we can allow 2 visitors, 24/7.</p>
-                  </div>
-                  <div>
-                    <h5 class="black-text">Having a Baby</h5>
-                    <p>
-                      If you’re having a baby, you can have 2 visitors, 24/7.
-                    </p>
-                  </div>
-                  <div>
-                    <h5 class="black-text">Clergy</h5>
-                    <p>
-                      In the hospital, clergy members can visit in addition to
-                      your allowed visitors.
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>
@@ -546,30 +579,30 @@
                       Quick Links
                     </h4>
                     <ul>
-                      <li>
-                        <a href="../patients-and-visitors/visitors.html"
+                     <li>
+                        <a href="../patients-and-visitors/visitors.php"
                           >Visitors</a
                         >
                       </li>
                       <li>
                         <a
-                          href="../patients-and-visitors/your-visits-or-stay.html"
+                          href="../patients-and-visitors/your-visits-or-stay.php"
                           >Your Visit or Stay</a
                         >
                       </li>
                       <li>
-                        <a href="../patients-and-visitors/what-to-expect.html"
+                        <a href="../patients-and-visitors/what-to-expect.php"
                           >What to Expect</a
                         >
                       </li>
                       <li>
                         <a
-                          href="../patients-and-visitors/patient-rights-and-responsibilities.html"
+                          href="../patients-and-visitors/patient-rights-and-responsibilities.php"
                           >Patient Rights & Responsibilities</a
                         >
                       </li>
                       <li>
-                        <a href="../patients-and-visitors/visiting-hours.html"
+                        <a href="../patients-and-visitors/visiting-hours.php"
                           >Visiting Hours</a
                         >
                       </li>
@@ -577,30 +610,30 @@
                   </div>
                   <div class="side-content bg-darker-purple">
                     <ul>
-                      <li>
+                       <li>
                         <a
-                          href="../patients-and-visitors/accepted-insurance.html"
+                          href="../patients-and-visitors/accepted-insurance.php"
                           >Accepted Insurance</a
                         >
                       </li>
                       <li>
                         <a
-                          href="../patients-and-visitors/billing-and-financial-asistance.html"
+                          href="../patients-and-visitors/billing-and-financial-asistance.php"
                           >Billing & Financial Asistance</a
                         >
                       </li>
                       <li>
-                        <a href="../patients-and-visitors/pay-your-bill.html"
+                        <a href="../patients-and-visitors/pay-your-bill.php"
                           >Pay Your Bill</a
                         >
                       </li>
                       <li>
-                        <a href="../patients-and-visitors/medical-records.html"
+                        <a href="../patients-and-visitors/medical-records.php"
                           >Request Medical Records</a
                         >
                       </li>
                       <li>
-                        <a href="../patients-and-visitors/find-a-doctor.html"
+                        <a href="../patients-and-visitors/find-a-doctor.php"
                           >Find a Doctor</a
                         >
                       </li>
@@ -712,31 +745,31 @@
             <div class="column-25">
               <h5 class="text-left text-white">About Us</h5>
               <ul>
-                <li><a href="../about-us/history.html">History</a></li>
+                 <li><a href="../about-us/history.php">History</a></li>
                 <li>
-                  <a href="../about-us/awards-and-accreditation.html"
+                  <a href="../about-us/awards-and-accreditation.php"
                     >Awards & Accreditation</a
                   >
                 </li>
                 <li>
-                  <a href="../about-us/meet-the-team.html">Meet the Team</a>
+                  <a href="../about-us/meet-the-team.php">Meet the Team</a>
                 </li>
                 <li>
-                  <a href="../about-us/mission-vision-values.html"
+                  <a href="../about-us/mission-vision-values.php"
                     >Mission, Vision & Values</a
                   >
                 </li>
-                <li><a href="../contact-us.html">Contact Us</a></li>
+                <li><a href="../contact-us.php">Contact Us</a></li>
               </ul>
             </div>
             <div class="column-25">
               <h5 class="text-left text-white">Health Professionals</h5>
               <ul>
-                <li><a href="../refer-a-patient.html">Refer a Patient</a></li>
+                <li><a href="../refer-a-patient.php">Refer a Patient</a></li>
                 <li>
-                  <a href="../request-appointment.html">Request Appointment</a>
+                  <a href="../request-appointment.php">Request Appointment</a>
                 </li>
-                <li><a href="../career.html">Career</a></li>
+                <li><a href="#/">Career</a></li>
                 <li><a href="#/">For Nurses</a></li>
                 <li><a href="#/">For Physician</a></li>
               </ul>
@@ -747,26 +780,26 @@
               <h5 class="text-left text-white">Patient & Visitors</h5>
               <ul>
                 <li>
-                  <a href="../patients-and-visitors/visitors.html">Visitors</a>
+                  <a href="../patients-and-visitors/visitors.php">Visitors</a>
                 </li>
                 <li>
-                  <a href="../patients-and-visitors/medical-records.html"
+                  <a href="../patients-and-visitors/medical-records.php"
                     >Medical Records</a
                   >
                 </li>
                 <li>
-                  <a href="../patients-and-visitors/accepted-insurance.html"
+                  <a href="../patients-and-visitors/accepted-insurance.php"
                     >Accepted Insurance</a
                   >
                 </li>
                 <li>
-                  <a href="../patients-and-visitors/pay-your-bill.html"
+                  <a href="../patients-and-visitors/pay-your-bill.php"
                     >Pay Your Bill</a
                   >
                 </li>
                 <li>
                   <a
-                    href="../patients-and-visitors/billing-and-financial-asistance.html"
+                    href="../patients-and-visitors/billing-and-financial-asistance.php"
                     >Billing and Financial Asistance</a
                   >
                 </li>
@@ -775,9 +808,9 @@
             <div class="column-25">
               <h5 class="text-left text-white">Resources</h5>
               <ul>
-                <li><a href="../services.html">Services</a></li>
+                <li><a href="../services.php">Services</a></li>
                 <li>
-                  <a href="../map-and-direction.html">Get Driving Direction</a>
+                  <a href="../map-and-direction.php">Get Driving Direction</a>
                 </li>
               </ul>
             </div>
@@ -841,13 +874,13 @@
               >
               (+974) 4439 5777
             </p>
-            <small> &copy; 2022 Twins Hospital. All Right Reserved. </small>
+            <small> &copy; <?php echo date("Y"); ?> Twins Hospital. All Right Reserved. </small>
           </div>
           <ul>
-            <li><a href="privacy.html">Privacy</a></li>
-            <li><a href="disclaimer.html">Disclaimer</a></li>
-            <li><a href="frequently-asked-question.html">FAQ</a></li>
-            <li><a href="#">Sitemap</a></li>
+         <li><a href="#/">Privacy</a></li>
+            <li><a href="#/">Disclaimer</a></li>
+            <li><a href="#/">FAQ</a></li>
+            <li><a href="#/">Sitemap</a></li>
             <li>
               <a href="#" target="_blank"
                 >Designed and Built By
