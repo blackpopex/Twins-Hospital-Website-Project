@@ -1,0 +1,81 @@
+<pages>
+    <links>
+        <title>Card Information</title>
+        <url>http://127.0.0.1:5503/patient-and-visitors/patient-care/credit-card-infomation.php</url>
+    </links>
+    <links>
+        <title>Book An Appointment</title>
+        <url>http://127.0.0.1:5503/patient-and-visitors/patient-care/book-appointment.php</url>
+    </links>
+    <links>
+        <title>Your Hospital Visit</title>
+        <url>http://127.0.0.1:5503/patient-and-visitors/patient-care/your-hospital-visit.php</url>
+    </links>
+    <links>
+        <title>Visiting Hours and Information</title>
+        <url>http://127.0.0.1:5503/patient-and-visitors/patient-care/your-hospital-visit/visiting-hours-and-information.php</url>
+    </links>
+    <links>
+        <title>Registration and Admission</title>
+        <url>http://127.0.0.1:5503/patient-and-visitors/patient-care/your-hospital-visit/registration-and-admission.php</url>
+    </links>
+    <links>
+        <title>What to Expect</title>
+        <url>http://127.0.0.1:5503/patient-and-visitors/patient-care/what-to-expect.php</url>
+    </links>
+    <links>
+        <title>Pay a Bill</title>
+        <url>http://127.0.0.1:5503/patient-and-visitors/patient-care/pay-a-bill.php</url>
+    </links>
+    <links>
+        <title>Patient Stories</title>
+        <url>http://127.0.0.1:5503/patient-and-visitors/patient-care/patient-stories.php</url>
+    </links>
+    <links>
+        <title>Frequently Asked Question</title>
+        <url>http://127.0.0.1:5503/patient-and-visitors/patient-care/frequently-asked-question.php</url>
+    </links>
+    <links>
+        <title>Visitors Policy</title>
+        <url>http://127.0.0.1:5503/patient-and-visitors/visitors/visitors-policy.php</url>
+    </links>
+    <links>
+        <title>Visitors Information</title>
+        <url>http://127.0.0.1:5503/patient-and-visitors/visitors/visitors-information.php</url>
+    </links>
+
+
+
+    <links>
+        <title>About Us</title>
+        <url>http://127.0.0.1:5503/about-us/about-us.php</url>
+    </links>
+    <links>
+        <title>Meet Our Team</title>
+        <url>http://127.0.0.1:5503/about-us/meet-out-team.php</url>
+    </links>
+    <links>
+        <title>Our History</title>
+        <url>http://127.0.0.1:5503/about-us/history.php</url>
+    </links>
+    <links>
+        <title>Our Services</title>
+        <url>http://127.0.0.1:5503/about-us/services.php</url>
+    </links>
+    <links>
+        <title>Why Choose Us</title>
+        <url>http://127.0.0.1:5503/about-us/why-choose-us.php</url>
+    </links>
+    <links>
+        <title>Mission, Vision and Values</title>
+        <url>http://127.0.0.1:5503/about-us/mission-vision-values.php</url>
+    </links>
+    <links>
+        <title>Refer A Patient</title>
+        <url>http://127.0.0.1:5503/refer-a-patient.php</url>
+    </links>
+    <links>
+        <title>Map and Direction</title>
+        <url>http://127.0.0.1:5503/map-and-direction.php</url>
+    </links>
+</pages>
