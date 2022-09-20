@@ -67,7 +67,7 @@
           <div class="flex-end container">
             <ul class="inline-block">
               <li><a href="#/">Career</a></li>
-              <li><a href="#">Donate Now</a></li>
+              <li><a href="#/">Donate Now</a></li>
             </ul>
           </div>
         </div>
@@ -293,7 +293,7 @@
                             Lorem Ipsum is simply dummy text of the,dummy text
                             of the
                           </p>
-                          <a href="#" class="lighter-purple">Find Out More</a>
+                          <a href="#/" class="lighter-purple">Find Out More</a>
                         </div>
                         <!-------------------HIDE ON MOBILE SCREENS --------------->
                         <div class="col-30 col-hidden-mobile">
@@ -308,7 +308,7 @@
                             Lorem Ipsum is simply dummy text of the,dummy text
                             of the
                           </p>
-                          <a href="#" class="lighter-purple">Find Out More</a>
+                          <a href="#/" class="lighter-purple">Find Out More</a>
                         </div>
                         <!--------------- SHOW ON LARGE AND MOBILE SCREENS ---------->
                         <ul class="col-30 panel">
@@ -720,7 +720,7 @@
                     air travelers to prove they've tested negative for COVID-19
                     before being
                   </p>
-                  <a href="#" class="purple-text"
+                  <a href="#/" class="purple-text"
                     >Learn More <i class="fa-solid fa-chevron-right"></i
                   ></a>
                 </div>
@@ -742,7 +742,7 @@
                     single patient in a small clinical trial conducted in the
                     US.
                   </p>
-                  <a href="#" class="purple-text"
+                  <a href="#/" class="purple-text"
                     >Learn More <i class="fa-solid fa-chevron-right"></i
                   ></a>
                 </div>
@@ -764,7 +764,7 @@
                     air travelers to prove they've tested negative for COVID-19
                     before being
                   </p>
-                  <a href="#" class="purple-text"
+                  <a href="#/" class="purple-text"
                     >Learn More <i class="fa-solid fa-chevron-right"></i
                   ></a>
                 </div>
@@ -935,7 +935,7 @@
             <li><a href="#/">Privacy</a></li>
             <li><a href="#/">Disclaimer</a></li>
             <li><a href="frequently-asked-question.php">FAQ</a></li>
-            <li><a href="#">Sitemap</a></li>
+            <li><a href="#/">Sitemap</a></li>
             <li>
               <a href="#" target="_blank"
                 >Designed and Built By

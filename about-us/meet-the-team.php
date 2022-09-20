@@ -679,7 +679,7 @@
                     air travelers to prove they've tested negative for COVID-19
                     before being
                   </p>
-                  <a href="#" class="purple-text"
+                  <a href="#/" class="purple-text"
                     >Learn More <i class="fa-solid fa-chevron-right"></i
                   ></a>
                 </div>
@@ -701,7 +701,7 @@
                     single patient in a small clinical trial conducted in the
                     US.
                   </p>
-                  <a href="#" class="purple-text"
+                  <a href="#/" class="purple-text"
                     >Learn More <i class="fa-solid fa-chevron-right"></i
                   ></a>
                 </div>
@@ -723,7 +723,7 @@
                     air travelers to prove they've tested negative for COVID-19
                     before being
                   </p>
-                  <a href="#" class="purple-text"
+                  <a href="#/" class="purple-text"
                     >Learn More <i class="fa-solid fa-chevron-right"></i
                   ></a>
                 </div>
@@ -896,7 +896,7 @@
             <li><a href="#/">FAQ</a></li>
             <li><a href="#/">Sitemap</a></li>
             <li>
-              <a href="#" target="_blank"
+             <a href="https://www.blackpopex.com" target="_blank"
                 >Designed and Built By
                 <span class="text-purple">Blackpopex</span></a
               >
