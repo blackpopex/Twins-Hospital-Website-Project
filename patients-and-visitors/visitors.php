@@ -107,7 +107,7 @@
                         >
                           <!-- SHOW ON LARGE AND MOBILE SCREENS -->
                           <ul class="col-30 panel">
-                             <li>
+                            <li>
                               <a href="../about-us/history.php">History</a>
                             </li>
                             <li>
@@ -136,7 +136,6 @@
                                 >Phone Directory</a
                               >
                             </li>
-                          </ul>
                           </ul>
                         </div>
                       </li>
@@ -213,7 +212,7 @@
                         </div>
                       </li>
                       <!--Other non dropdown section-->
-                      <li>
+                     <li>
                         <a
                           href="../services.php"
                           class="dropbtn-accordion-children"
@@ -313,7 +312,7 @@
                         </div>
                         <!--------------- SHOW ON LARGE AND MOBILE SCREENS ---------->
                         <ul class="col-30 panel">
-                          <li>
+                           <li>
                             <a href="../about-us/history.php">History</a>
                           </li>
                           <li>
@@ -415,7 +414,7 @@
                           </li>
                         </ul>
                         <ul class="col-25 panel">
-                          <li>
+                            <li>
                             <a
                               href="../patients-and-visitors/accepted-insurance.php"
                               >Accepted Insurance</a

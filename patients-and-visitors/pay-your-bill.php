@@ -29,9 +29,7 @@
         });
       });
 
-      searchBTN.addEventListener("click", function () {
-        inputValue.value = "hello";
-      });
+    
       //Ajax codes
       function showSearchBox(str) {
         if (str.length == 0) {

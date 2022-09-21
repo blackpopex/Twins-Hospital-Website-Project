@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Twins Hospital | Accepted Insurance</title>
-    <link rel="icon" type="image/x-icon" href="./img/logo/favicon.ico.png" />
+       <link rel="icon" type="image/x-icon" href="./img/logo/favicon.ico.png" />
     <meta name="description" content="" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -99,7 +99,15 @@
                   <div class="increase-container third-navbar">
                     <ul id="navbar-3" class="inline-block">
                       <!--Dropdown-content for About Us-->
-                      <li>
+                      <li class="dropdown">
+                        <a href="#/" class="dropbtn-accordion">About Us </a>
+                        <div
+                          class="header-dropdown-content"
+                          id="dropDownContent"
+                        >
+                          <!-- SHOW ON LARGE AND MOBILE SCREENS -->
+                          <ul class="col-30 panel">
+                            <li>
                               <a href="../about-us/history.php">History</a>
                             </li>
                             <li>
@@ -139,7 +147,7 @@
                         <div class="header-dropdown-content">
                           <!-- SHOW ON LARGE AND MOBILE SCREENS -->
                           <ul class="col-25 panel">
-                             <li>
+                           <li>
                               <a href="../patients-and-visitors/visitors.php"
                                 >Visitors</a
                               >
@@ -170,7 +178,7 @@
                             </li>
                           </ul>
                           <ul class="col-25 panel">
-                            <li>
+                             <li>
                               <a
                                 href="../patients-and-visitors/accepted-insurance.php"
                                 >Accepted Insurance</a
@@ -304,7 +312,7 @@
                         </div>
                         <!--------------- SHOW ON LARGE AND MOBILE SCREENS ---------->
                         <ul class="col-30 panel">
-                       <li>
+                           <li>
                             <a href="../about-us/history.php">History</a>
                           </li>
                           <li>
@@ -375,7 +383,7 @@
                         </div>
                         <!-------------- SHOW ON LARGE AND MOBILE SCREENS ------------->
                         <ul class="col-25 panel">
-                         <li>
+                           <li>
                             <a href="../patients-and-visitors/visitors.php"
                               >Visitors</a
                             >
@@ -406,7 +414,7 @@
                           </li>
                         </ul>
                         <ul class="col-25 panel">
-                        <li>
+                            <li>
                             <a
                               href="../patients-and-visitors/accepted-insurance.php"
                               >Accepted Insurance</a
@@ -475,7 +483,6 @@
           </div>
         </div>
       </header>
-
       <!-------------------------HEADER SECTION  ----------style="box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1)"------------>
       <section id="sectionHeader">
         <div class="section-image-container">
