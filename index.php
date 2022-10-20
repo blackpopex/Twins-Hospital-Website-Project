@@ -493,7 +493,7 @@
                   Get a second opinion from the nation's best. We are here for
                   you!
                 </p>
-                <a href="#/" class="text-purple"
+                <a href="http://twinsclinic.42web.io/about-us/history.php" class="text-purple"
                   >Learn More
                   <i class="fa fa-fw fa-chevron-right text-purple"></i
                 ></a>
@@ -975,7 +975,7 @@
               <div>
                 <h3 class="purple-text text-left">Let’s Help You Find Us</h3>
                 <a
-                  href="#/"
+                  href="https://www.google.com.ng/maps/dir//Twins+Clinic+%26+Hospital,+1+Twins+Clinic+Drive,+Off+Deco+Rd,+332211,+Warri/@5.5262409,5.760367,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1041b284d980d8f3:0x28bb58a1ce4ff287!2m2!1d5.7625557!2d5.5262356?hl=en" target="_blank"
                   class="purple-text"
                   style="display: flex; align-items: center"
                   >Get driving direction
@@ -1153,7 +1153,7 @@
             <li><a href="#/">FAQ</a></li>
             <li><a href="#">Sitemap</a></li>
             <li>
-              <a href="https://www.blackpopex.com" target="_blank"
+              <a href="www.blackpopex.com" target="_blank"
                 >Designed and Built By
                 <span class="text-purple">Blackpopex</span></a
               >

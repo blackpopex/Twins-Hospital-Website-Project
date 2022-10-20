@@ -29,7 +29,9 @@
         });
       });
 
-    
+      searchBTN.addEventListener("click", function () {
+        inputValue.value = "hello";
+      });
       //Ajax codes
       function showSearchBox(str) {
         if (str.length == 0) {
@@ -1031,7 +1033,7 @@
             <li><a href="#/">FAQ</a></li>
             <li><a href="#/">Sitemap</a></li>
             <li>
-             <a href="https://www.blackpopex.com" target="_blank"
+             <a href="www.blackpopex.com" target="_blank"
                 >Designed and Built By
                 <span class="text-purple">Blackpopex</span></a
               >
